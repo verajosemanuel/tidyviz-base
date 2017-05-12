@@ -16,22 +16,26 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   openjdk-7-jdk \
   libv8-3.14-dev \
   libgsl0-dev \
-  && . /etc/environment \
+  && . /etc/environment
  
 RUN install2.r addinslist \
+Amelia \
 anytime \
-choroplethr \
-choroplethrMaps \
+assertive \
+assertr \
+assertthat \
+caret \
 chunked \
+cluster \
 corrplot \
 data.table \
-devtools \
-DiagrammeR \
 diffobj \
+digest \
 DT \
 filesstrings \
 flexdashboard \
 formatR \
+gbm \
 GGally \
 ggbeeswarm \
 ggfortify \
@@ -43,6 +47,7 @@ ggThemeAssist \
 ggthemes \
 ggvis \
 glue \
+gmodels \
 gpclib \
 grid \
 gridExtra \
@@ -58,7 +63,6 @@ knitr \
 leaflet \
 magrittr \
 microbenchmark \
-missForest \
 NMF \
 pathological \
 plotly \
@@ -75,6 +79,7 @@ rmarkdown \
 rmdformats \
 rticles \
 stringdist \
+tester \
 textclean \
 tidytext \
 tidyxl \
@@ -84,7 +89,9 @@ tufte \
 udunits2 \
 validate \
 viridis \
+VIM \
 wordcloud 
-RUN Rscript -e 'devtools::install_github(c("drsimonj/twidlr","dyerlab/popgraph","hadley/precis","houstonusers/pipefittr","rstats-db/RPostgres","smach/rmiscutils","swarm-lab/editR","ropensci/tabulizerjars","ropensci/tabulizer","ThinkRstat/littleboxes","thomasp85/lime","yihui/printr"))'
-RUN echo "install.packages('rJava', repos='http://www.rforge.net/', configure.args='--disable-Xrs')" | R --no-save
-RUN rm -rf /tmp/downloaded_packages/
+RUN Rscript -e 'devtools::install_github(c("hadley/precis","rstats-db/RPostgres","smach/rmiscutils","yihui/printr"))'
+RUN apt-get clean \
+&& rm -rf /var/lib/apt/lists/ \
+&& RUN rm -rf /tmp/downloaded_packages/  /tmp/*.rds
