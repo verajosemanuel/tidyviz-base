@@ -4,7 +4,7 @@
 
 image            | description                               | size   | metrics | build status 
 ---------------- | ----------------------------------------- | ------ | ------- | --------------
-[tidyviz-base](https://hub.docker.com/r/jvera/tidyviz-base)            |  Adds reporting & interactive charts packages   |[![](https://images.microbadger.com/badges/image/jvera/tidyviz-base.svg)](https://microbadger.com/images/jvera/tidyviz-base "Get your own image badge on microbadger.com")| [![](https://img.shields.io/docker/pulls/jvera/tidyviz-base.svg)](https://hub.docker.com/r/jvera/tidyviz-base) | [![](https://img.shields.io/docker/automated/jvera/tidyviz-base.svg)](https://hub.docker.com/r/jvera/tidyviz-base/builds)
+[tidyviz-base](https://hub.docker.com/r/jvera/tidyviz-base)            |  base for tidyviz   |[![](https://images.microbadger.com/badges/image/jvera/tidyviz-base.svg)](https://microbadger.com/images/jvera/tidyviz-base "Get your own image badge on microbadger.com")| [![](https://img.shields.io/docker/pulls/jvera/tidyviz-base.svg)](https://hub.docker.com/r/jvera/tidyviz-base) | [![](https://img.shields.io/docker/automated/jvera/tidyviz-base.svg)](https://hub.docker.com/r/jvera/tidyviz-base/builds)
 
 base is rocker/verse 
 
