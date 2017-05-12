@@ -16,19 +16,19 @@ just libraries and github packages plus rJava
 Pull the image from repo:
 
 ```bash
-docker pull jvera/tidyviz:latest
+docker pull jvera/tidyviz-base:latest
 ```
 Then build a container:
 
 ```bash
-docker run -d -p 8787:8787 jvera/tidyviz
+docker run -d -p 8787:8787 jvera/tidyviz-base
 ```
 
 Connect to port 8787 with your browser (rstudio as user and password) to check if your Rserver is up and running.
 By default, the RStudio user does not have access to root, such that users cannot install binary libraries with apt-get without first entering the container. To enable root from within RStudio, launch the container with the flag -e ROOT=TRUE, e.g.
 
 ```bash
-docker run -d -p 8787:8787 -e ROOT=TRUE jvera/tidyviz
+docker run -d -p 8787:8787 -e ROOT=TRUE jvera/tidyviz-base
 ```
 You can now open a shell from RStudio (see the "Tools" menu), or directly from the R console using system(), e.g.
 
