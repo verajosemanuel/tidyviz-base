@@ -94,4 +94,4 @@ wordcloud
 RUN Rscript -e 'devtools::install_github(c("hadley/precis","rstats-db/RPostgres","smach/rmiscutils","yihui/printr"))'
 RUN apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
-&& RUN rm -rf /tmp/downloaded_packages/  /tmp/*.rds
+&& rm -rf /tmp/downloaded_packages/  /tmp/*.rds
