@@ -77,6 +77,7 @@ rio \
 riverplot \
 rmarkdown \
 rmdformats \
+rstan \
 rticles \
 stringdist \
 tester \
