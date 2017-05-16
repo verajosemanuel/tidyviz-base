@@ -31,12 +31,14 @@ cluster \
 colorspace \
 corrplot \
 data.table \
+desctable \
 diffobj \
 DT \
 errors \
 filesstrings \
 flexdashboard \
 formatR \
+formattable \
 gbm \
 GGally \
 ggbeeswarm \
@@ -61,6 +63,7 @@ igraph \
 janitor \
 knitr \
 leaflet \
+leaps \
 lmtest \
 magrittr \
 microbenchmark \
@@ -82,6 +85,7 @@ rticles \
 scatterplot3d \
 shinyjs \
 stringdist \
+summarytools \
 tester \
 textclean \
 tidytext \
