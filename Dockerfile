@@ -32,6 +32,7 @@ data.table \
 diffobj \
 digest \
 DT \
+errors \
 filesstrings \
 flexdashboard \
 formatR \
@@ -77,7 +78,6 @@ rio \
 riverplot \
 rmarkdown \
 rmdformats \
-rstan \
 rticles \
 stringdist \
 tester \
