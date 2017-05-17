@@ -57,6 +57,7 @@ glue \
 gmodels \
 gpclib \
 gridExtra \
+gtable \
 highcharter \
 Hmisc \
 htmlwidgets \
@@ -101,7 +102,7 @@ validate \
 viridis \
 VIM \
 wordcloud 
-RUN Rscript -e 'devtools::install_github(c("hadley/precis","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","hrbrmstr/hrbrthemes","thomasp85/tweenr"))'
+RUN Rscript -e 'devtools::install_github(c("hadley/precis","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","hrbrmstr/hrbrthemes","thomasp85/tweenr"))' \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
