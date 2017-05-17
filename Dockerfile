@@ -20,6 +20,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
  
 RUN install2.r addinslist \
 Amelia \
+animation \
 anytime \
 assertive \
 assertr \
@@ -41,7 +42,9 @@ formatR \
 formattable \
 gbm \
 GGally \
+gganimate \
 ggbeeswarm \
+ggforce \
 ggfortify \
 ggiraph \
 ggraph \
@@ -98,7 +101,7 @@ validate \
 viridis \
 VIM \
 wordcloud 
-RUN Rscript -e 'devtools::install_github(c("hadley/precis","rstats-db/RPostgres","smach/rmiscutils","yihui/printr"))'
+RUN Rscript -e 'devtools::install_github(c("hadley/precis","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","hrbrmstr/hrbrthemes","thomasp85/tweenr"))'
 RUN apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
