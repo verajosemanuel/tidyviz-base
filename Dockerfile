@@ -101,6 +101,7 @@ udunits2 \
 validate \
 viridis \
 VIM \
+VIMGUI \
 wordcloud 
 RUN Rscript -e 'devtools::install_github(c("hadley/precis","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","hrbrmstr/hrbrthemes","thomasp85/tweenr"))' \
 && apt-get clean \
