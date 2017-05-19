@@ -47,6 +47,7 @@ ggbeeswarm \
 ggforce \
 ggfortify \
 ggiraph \
+ggmap \
 ggraph \
 ggrepel \
 ggsci \
