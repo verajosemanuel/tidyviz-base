@@ -58,6 +58,7 @@ glue \
 gmodels \
 gpclib \
 gridExtra \
+gsubfn \
 gtable \
 highcharter \
 Hmisc \
