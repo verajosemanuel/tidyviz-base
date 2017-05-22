@@ -90,6 +90,8 @@ rmdformats \
 rticles \
 scatterplot3d \
 shinyjs \
+sjPlot \
+sjmisc \
 stringdist \
 summarytools \
 tester \
