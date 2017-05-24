@@ -92,8 +92,6 @@ rmdformats \
 rticles \
 scatterplot3d \
 shinyjs \
-sjPlot \
-sjmisc \
 stringdist \
 summarytools \
 tester \
@@ -108,8 +106,8 @@ validate \
 viridis \
 VIM \
 VIMGUI \
-wordcloud 
-RUN Rscript -e 'devtools::install_github(c("hadley/precis","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","hrbrmstr/hrbrthemes","thomasp85/tweenr"))' \
+wordcloud \
+&& Rscript -e 'devtools::install_github(c("hadley/precis","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","hrbrmstr/hrbrthemes","thomasp85/tweenr","hafen/geofacet"))' \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
