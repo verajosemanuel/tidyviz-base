@@ -60,6 +60,7 @@ gpclib \
 gridExtra \
 gsubfn \
 gtable \
+hexbin \
 highcharter \
 Hmisc \
 htmlwidgets \
@@ -83,6 +84,7 @@ psych \
 R.utils \
 RColorBrewer \
 Rcpp \
+revealjs \
 rio \
 riverplot \
 rmarkdown \
