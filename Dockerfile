@@ -34,6 +34,7 @@ corrplot \
 data.table \
 desctable \
 diffobj \
+directlabels \
 DT \
 errors \
 filesstrings \
