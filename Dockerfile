@@ -16,6 +16,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   openjdk-7-jdk \
   libv8-3.14-dev \
   libgsl0-dev \
+  libtiff4-dev  \
   && . /etc/environment
  
 RUN install2.r addinslist \
@@ -37,6 +38,7 @@ diffobj \
 directlabels \
 DT \
 errors \
+extrafont \
 filesstrings \
 flexdashboard \
 formatR \
@@ -84,6 +86,7 @@ psych \
 R.utils \
 RColorBrewer \
 Rcpp \
+RCurl \
 revealjs \
 rio \
 riverplot \
@@ -92,6 +95,7 @@ rmdformats \
 rticles \
 scatterplot3d \
 shinyjs \
+showtext \
 stringdist \
 summarytools \
 tester \
@@ -108,6 +112,7 @@ VIM \
 VIMGUI \
 wordcloud \
 && Rscript -e 'devtools::install_github(c("hadley/colformat","hadley/precis","ropenscilabs/skimr","dgrtwo/gganimate","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","hrbrmstr/hrbrthemes","thomasp85/tweenr","hafen/geofacet"))' \
+&& Rscript -e 'extrafont::font_import(prompt = FALSE)' \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
