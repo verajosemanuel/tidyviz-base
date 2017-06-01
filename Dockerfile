@@ -16,7 +16,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   openjdk-7-jdk \
   libv8-3.14-dev \
   libgsl0-dev \
-  libtiff4-dev  \
+  libtiff5-dev \
   && . /etc/environment
  
 RUN install2.r addinslist \
