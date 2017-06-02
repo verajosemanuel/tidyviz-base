@@ -17,8 +17,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libv8-3.14-dev \
   libgsl0-dev \
   libtiff5-dev \
-  && . /etc/environment \ 
-&& install2.r addinslist \
+  && . /etc/environment  
+RUN install2.r addinslist \
 Amelia \
 animation \
 anytime \
