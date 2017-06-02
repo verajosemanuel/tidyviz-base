@@ -9,7 +9,9 @@ image            | description                               | size   | metrics 
 base is rocker/verse 
 
 this is a base image for tidyiz.
-just libraries and github packages plus rJava
+just some libraries and github packages plus rJava
+
+### PLEASE CONSIDER tidyviz instead for a more packages and features
 
 ## Quick Reference
 
