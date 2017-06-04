@@ -31,6 +31,7 @@ chunked \
 cluster \
 colorspace \
 corrplot \
+countrycode \
 data.table \
 desctable \
 diffobj \
