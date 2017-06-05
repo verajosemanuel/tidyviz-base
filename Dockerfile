@@ -28,6 +28,7 @@ assertthat \
 car \
 caret \
 chunked \
+cld2 \
 cluster \
 colorspace \
 corrplot \
