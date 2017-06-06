@@ -98,6 +98,7 @@ scatterplot3d \
 shiny \
 shinyBS \
 shniyFiles \
+shinydashboard \
 shinyjs \
 showtext \
 stringdist \
