@@ -95,6 +95,9 @@ rmarkdown \
 rmdformats \
 rticles \
 scatterplot3d \
+shiny \
+shinyBS \
+shniyFiles \
 shinyjs \
 showtext \
 stringdist \
