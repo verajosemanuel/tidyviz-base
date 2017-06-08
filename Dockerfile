@@ -33,6 +33,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   xfonts-base \
   xvfb \
   libnlopt-dev \
+  ImageMagick \
+  libssl-dev \
   && . /etc/environment \
 && install2.r --error Amelia \
 animation \
