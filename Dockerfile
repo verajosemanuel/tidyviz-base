@@ -102,6 +102,7 @@ plotrr \
 prettydoc \
 profvis \
 psych \
+RTextTools \
 R.utils \
 RColorBrewer \
 Rcpp \
