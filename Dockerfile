@@ -61,6 +61,7 @@ filesstrings \
 flexdashboard \
 formatR \
 formattable \
+futile.logger \
 gbm \
 GGally \
 ggbeeswarm \
