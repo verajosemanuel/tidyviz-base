@@ -3,6 +3,7 @@ FROM rocker/ropensci:latest
 LABEL maintainer "vera.josemanuel@gmail.com"
 
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
+  ImageMagick \
   libxml2-dev \
   libcairo2-dev \
   libsqlite-dev \
