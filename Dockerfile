@@ -11,16 +11,33 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libmariadb-client-lgpl-dev \
   libpq-dev \
   libudunits2-dev \
+  libgdal-dev \
   libgdal1-dev \
+  libgeos-dev \
+  libgeos++-dev \
   libproj-dev \
+  libspatialite-dev \
+  netcdf-bin \
   openjdk-7-jre \
   openjdk-7-jdk \
   libv8-3.14-dev \
   libgsl0-dev \
   libtiff5-dev \
-  && . /etc/environment  
-RUN install2.r addinslist \
-Amelia \
+  libgtk2.0-dev \
+  r-cran-rgtk2 \
+  r-cran-cairodevice \
+  r-cran-rgl \
+  r-cran-tkrplot \
+  bwidget \
+  tk-dev \
+  xauth \
+  xfonts-base \
+  xvfb \
+  libnlopt-dev \
+  ImageMagick \
+  libssl-dev \
+  && . /etc/environment \
+&& install2.r --error Amelia \
 animation \
 anytime \
 assertive \
@@ -45,6 +62,7 @@ filesstrings \
 flexdashboard \
 formatR \
 formattable \
+futile.logger \
 gbm \
 GGally \
 ggbeeswarm \
@@ -85,6 +103,7 @@ plotrr \
 prettydoc \
 profvis \
 psych \
+RTextTools \
 R.utils \
 RColorBrewer \
 Rcpp \
@@ -98,7 +117,7 @@ rticles \
 scatterplot3d \
 shiny \
 shinyBS \
-shniyFiles \
+shinyFiles \
 shinydashboard \
 shinyjs \
 showtext \
@@ -115,11 +134,10 @@ tufte \
 udunits2 \
 validate \
 viridis \
+wordcloud \ 
 VIM \
-VIMGUI \
-wordcloud \
-&& Rscript -e 'devtools::install_github(c("hadley/colformat","hadley/precis","ropenscilabs/skimr","dgrtwo/gganimate","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","hrbrmstr/hrbrthemes","thomasp85/tweenr","hafen/geofacet","njtierney/narnia"))' \
+&& Rscript -e 'devtools::install_github(c("hadley/colformat","hadley/precis","ropenscilabs/skimr","dgrtwo/gganimate","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","hrbrmstr/hrbrthemes","thomasp85/tweenr","hafen/geofacet","njtierney/narnia","krlmlr/here","krlmlr/rprojroot"))' \
 && Rscript -e 'extrafont::font_import(prompt = FALSE)' \
-&& apt-get clean \
+RUN apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
