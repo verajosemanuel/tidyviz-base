@@ -82,6 +82,7 @@ gpclib \
 gridExtra \
 gsubfn \
 gtable \
+here \
 hexbin \
 highcharter \
 Hmisc \
@@ -113,6 +114,7 @@ rio \
 riverplot \
 rmarkdown \
 rmdformats \
+rprojroot \
 rticles \
 scatterplot3d \
 shiny \
