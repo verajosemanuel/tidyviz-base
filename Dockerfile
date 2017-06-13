@@ -37,7 +37,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   ImageMagick \
   libssl-dev \
   && . /etc/environment \
-&& install2.r --error Amelia \
+&& install2.r --error afex \
+Amelia \
 animation \
 anytime \
 assertive \
