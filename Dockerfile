@@ -107,6 +107,7 @@ plotrr \
 prettydoc \
 profvis \
 psych \
+qdapRegex \
 RTextTools \
 R.utils \
 RColorBrewer \
