@@ -59,6 +59,7 @@ directlabels \
 DT \
 errors \
 extrafont \
+factoextra \
 filesstrings \
 flexdashboard \
 formatR \
