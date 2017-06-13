@@ -48,6 +48,7 @@ car \
 caret \
 chunked \
 cld2 \
+clickR \
 cluster \
 colorspace \
 corrplot \
