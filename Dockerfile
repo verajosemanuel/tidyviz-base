@@ -104,6 +104,7 @@ microbenchmark \
 mime \
 munsell \
 NMF \
+optparse \
 pathological \
 plotly \
 plotrr \
