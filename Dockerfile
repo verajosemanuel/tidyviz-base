@@ -54,6 +54,7 @@ colorspace \
 corrplot \
 countrycode \
 data.table \
+dbplyr \
 desctable \
 diffobj \
 directlabels \
