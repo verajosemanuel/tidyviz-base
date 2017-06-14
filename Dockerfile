@@ -40,6 +40,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
 && install2.r --error afex \
 Amelia \
 animation \
+antiword \
 anytime \
 assertive \
 assertr \
@@ -48,6 +49,7 @@ car \
 caret \
 chunked \
 cld2 \
+cld3 \
 clickR \
 cluster \
 colorspace \
@@ -92,6 +94,7 @@ highcharter \
 Hmisc \
 htmlwidgets \
 httpuv \
+hunspell \
 huxtable \
 igraph \
 janitor \
@@ -107,6 +110,7 @@ munsell \
 NMF \
 optparse \
 pathological \
+pdftools \
 plotly \
 plotrr \
 prettydoc \
@@ -118,6 +122,7 @@ R.utils \
 RColorBrewer \
 Rcpp \
 RCurl \
+readtext \
 revealjs \
 rio \
 riverplot \
@@ -134,8 +139,10 @@ shinyjs \
 showtext \
 stringdist \
 summarytools \
+tesseract \
 tester \
 textclean \
+textreadr \
 tidytext \
 tidyxl \
 tint \
@@ -143,6 +150,7 @@ tm \
 topicmodels \
 tufte \
 udunits2 \
+unrtf \
 validate \
 viridis \
 wordcloud \ 
