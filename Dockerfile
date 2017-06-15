@@ -2,6 +2,8 @@ FROM rocker/ropensci:latest
 
 LABEL maintainer "vera.josemanuel@gmail.com"
 
+ENV GOPATH /opt/go
+
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   ImageMagick \
   libxml2-dev \
@@ -22,7 +24,6 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   openjdk-7-jdk \
   libv8-3.14-dev \
   libgsl0-dev \
-  libtiff5-dev \
   libgtk2.0-dev \
   r-cran-rgtk2 \
   r-cran-cairodevice \
@@ -44,32 +45,30 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libssl-dev \
   libpango1.0-dev \
   libpng12-dev \
+  libtiff5-dev \
   libtool \
   zlib1g-dev \
-  && git clone --branch 3.04.01 --depth 1 https://github.com/tesseract-ocr/tesseract.git /tmp/tesseract \
-  && cd /tmp/tesseract \
-  && ./autogen.sh \
-  && ./configure \
-  && make \
-  && make install \
-  && make training \
-  && make training-install \
-  && ldconfig \
-  && cd / \
-  && curl -o /usr/local/share/tessdata/eng.traineddata \
-    https://raw.githubusercontent.com/tesseract-ocr/tessdata/master/eng.traineddata \
-  && apt-get purge --auto-remove -y \
-    autoconf \
-    automake \
-    build-essential \
-    ca-certificates \
-    curl \
-    git \
-    libtool \
+  automake \
+  autoconf-archive \
+  pkg-config \
+  curl \
+  golang \
+  libtesseract3 \
+  libtesseract-dev \
+  tesseract-ocr \
+  tesseract-ocr-eng \
+  tesseract-ocr-spa \
+  libpoppler-cpp-dev \
+  && mkdir -p /usr/local/share/tessdata/ && \
+    cp -R /usr/share/tesseract-ocr/tessdata/* /usr/local/share/tessdata/ \
+  && mkdir -p $GOPATH \
+  && go get -u -v -t github.com/tleyden/open-ocr \
+  && cd $GOPATH/src/github.com/tleyden/open-ocr/cli-httpd && go build -v -o open-ocr-httpd && cp open-ocr-httpd /usr/bin \
+  && cd $GOPATH/src/github.com/tleyden/open-ocr/cli-worker && go build -v -o open-ocr-worker && cp open-ocr-worker /usr/bin \
   && apt-get clean \
   && rm -rf /tmp/tesseract /var/lib/apt/lists/* \
   && . /etc/environment \
-&& install2.r --error afex \
+  && install2.r --error afex \
 Amelia \
 animation \
 antiword \
@@ -192,3 +191,4 @@ VIM \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
+
