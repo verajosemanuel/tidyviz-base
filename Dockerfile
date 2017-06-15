@@ -35,11 +35,39 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   xvfb \
   libnlopt-dev \
   ImageMagick \
-  libssl-dev \
-  tesseract-ocr-eng \
-  tesseract-ocr-es \
-  libtesseract-dev \
+  git \
+  libgomp1 \
+  libicu52 \
+  libicu-dev \
+  liblept4 \
   libleptonica-dev \
+  libssl-dev \
+  libpango1.0-dev \
+  libpng12-dev \
+  libtool \
+  zlib1g-dev \
+  && git clone --branch 3.04.01 --depth 1 https://github.com/tesseract-ocr/tesseract.git /tmp/tesseract \
+  && cd /tmp/tesseract \
+  && ./autogen.sh \
+  && ./configure \
+  && make \
+  && make install \
+  && make training \
+  && make training-install \
+  && ldconfig \
+  && cd / \
+  && curl -o /usr/local/share/tessdata/eng.traineddata \
+    https://raw.githubusercontent.com/tesseract-ocr/tessdata/master/eng.traineddata \
+  && apt-get purge --auto-remove -y \
+    autoconf \
+    automake \
+    build-essential \
+    ca-certificates \
+    curl \
+    git \
+    libtool \
+  && apt-get clean \
+  && rm -rf /tmp/tesseract /var/lib/apt/lists/*
   && . /etc/environment \
 && install2.r --error afex \
 Amelia \
@@ -164,3 +192,10 @@ VIM \
 RUN apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
+
+
+
+#  tesseract-ocr-eng \
+#  tesseract-ocr-es \
+#  libtesseract-dev \
+#  libleptonica-dev \
