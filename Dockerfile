@@ -36,6 +36,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libnlopt-dev \
   ImageMagick \
   libssl-dev \
+  libtesseract-dev \
+  libleptonica-dev \
   && . /etc/environment \
 && install2.r --error afex \
 Amelia \
