@@ -67,7 +67,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     git \
     libtool \
   && apt-get clean \
-  && rm -rf /tmp/tesseract /var/lib/apt/lists/*
+  && rm -rf /tmp/tesseract /var/lib/apt/lists/* \
   && . /etc/environment \
 && install2.r --error afex \
 Amelia \
@@ -189,13 +189,6 @@ wordcloud \
 VIM \
 && Rscript -e 'devtools::install_github(c("hadley/colformat","hadley/precis","ropenscilabs/skimr","dgrtwo/gganimate","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","hrbrmstr/hrbrthemes","thomasp85/tweenr","hafen/geofacet","njtierney/narnia","krlmlr/here","krlmlr/rprojroot","ropenscilabs/packagemetrics","jeremystan/aargh","r-lib/boxes","ropenscilabs/available","ropenscilabs/data-packages"))' \
 && Rscript -e 'extrafont::font_import(prompt = FALSE)' \
-RUN apt-get clean \
+&& apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
-
-
-
-#  tesseract-ocr-eng \
-#  tesseract-ocr-es \
-#  libtesseract-dev \
-#  libleptonica-dev \
