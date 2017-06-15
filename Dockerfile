@@ -36,6 +36,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libnlopt-dev \
   ImageMagick \
   libssl-dev \
+  tesseract-ocr-eng \
+  tesseract-ocr-es \
   libtesseract-dev \
   libleptonica-dev \
   && . /etc/environment \
