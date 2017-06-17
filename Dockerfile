@@ -29,46 +29,43 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   r-cran-cairodevice \
   r-cran-rgl \
   r-cran-tkrplot \
-  bwidget \
-  tk-dev \
-  xauth \
   xfonts-base \
-  xvfb \
   libnlopt-dev \
-  ImageMagick \
   git \
   libgomp1 \
   libicu52 \
   libicu-dev \
-  liblept4 \
-  libleptonica-dev \
   libssl-dev \
   libpango1.0-dev \
   libpng12-dev \
   libtiff5-dev \
+  libjpeg62-turbo-dev \
   libtool \
   zlib1g-dev \
   automake \
   autoconf-archive \
   pkg-config \
   curl \
-  golang \
-  libtesseract3 \
-  libtesseract-dev \
-  tesseract-ocr \
-  tesseract-ocr-eng \
-  tesseract-ocr-spa \
   libpoppler-cpp-dev \
-  && mkdir -p /usr/local/share/tessdata/ && \
-    cp -R /usr/share/tesseract-ocr/tessdata/* /usr/local/share/tessdata/ \
-  && mkdir -p $GOPATH \
-  && go get -u -v -t github.com/tleyden/open-ocr \
-  && cd $GOPATH/src/github.com/tleyden/open-ocr/cli-httpd && go build -v -o open-ocr-httpd && cp open-ocr-httpd /usr/bin \
-  && cd $GOPATH/src/github.com/tleyden/open-ocr/cli-worker && go build -v -o open-ocr-worker && cp open-ocr-worker /usr/bin \
-  && apt-get clean \
-  && rm -rf /tmp/tesseract /var/lib/apt/lists/* \
-  && . /etc/environment \
-  && install2.r --error afex \
+  && . /etc/environment 
+
+RUN wget http://www.leptonica.com/source/leptonica-1.74.1.tar.gz \
+&& tar xvf leptonica-1.74.1.tar.gz \
+&& cd leptonica-1.74.1 \
+&& ./configure \
+&& make \
+&& make install \
+&& git clone https://github.com/tesseract-ocr/tesseract.git \
+&& cd tesseract \
+&& ./autogen.sh \
+&& ./configure --enable-debug \ 
+&& LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" \
+&& make \ 
+&& make install \
+&& make install-langs \
+&& ldconfig
+
+RUN install2.r --error afex \
 Amelia \
 animation \
 antiword \
