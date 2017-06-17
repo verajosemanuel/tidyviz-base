@@ -46,6 +46,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   autoconf-archive \
   pkg-config \
   curl \
+  libtesseract-dev \
+  libleptonica-dev \
   libpoppler-cpp-dev \
   && . /etc/environment 
 
