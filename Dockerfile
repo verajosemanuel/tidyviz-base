@@ -2,10 +2,9 @@ FROM rocker/ropensci:latest
 
 LABEL maintainer "vera.josemanuel@gmail.com"
 
-ENV GOPATH /opt/go
-
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   ImageMagick \
+  libmagick++-dev \
   libxml2-dev \
   libcairo2-dev \
   libsqlite-dev \
@@ -49,9 +48,12 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libtesseract-dev \
   libleptonica-dev \
   libpoppler-cpp-dev \
-  && . /etc/environment 
-
-RUN wget http://www.leptonica.com/source/leptonica-1.74.1.tar.gz \
+  tesseract-ocr-eng \
+  libtesseract3 \
+  tesseract-ocr \
+  tesseract-ocr-spa \
+  && . /etc/environment \
+&& wget http://www.leptonica.com/source/leptonica-1.74.1.tar.gz \
 && tar xvf leptonica-1.74.1.tar.gz \
 && cd leptonica-1.74.1 \
 && ./configure \
@@ -65,9 +67,8 @@ RUN wget http://www.leptonica.com/source/leptonica-1.74.1.tar.gz \
 && make \ 
 && make install \
 && make install-langs \
-&& ldconfig
-
-RUN install2.r --error afex \
+&& ldconfig \
+&& install2.r --error afex \
 Amelia \
 animation \
 antiword \
@@ -132,6 +133,7 @@ knitr \
 leaflet \
 leaps \
 lmtest \
+magick \
 magrittr \
 manipulate \
 microbenchmark \
@@ -169,7 +171,6 @@ shinyjs \
 showtext \
 stringdist \
 summarytools \
-tesseract \
 tester \
 textclean \
 textreadr \
