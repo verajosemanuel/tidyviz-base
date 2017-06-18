@@ -30,7 +30,6 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   r-cran-tkrplot \
   xfonts-base \
   libnlopt-dev \
-  git \
   libgomp1 \
   libicu52 \
   libicu-dev \
@@ -44,30 +43,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   automake \
   autoconf-archive \
   pkg-config \
-  curl \
-  libtesseract-dev \
-  libleptonica-dev \
-  libpoppler-cpp-dev \
-  tesseract-ocr-eng \
-  libtesseract3 \
-  tesseract-ocr \
-  tesseract-ocr-spa \
   && . /etc/environment \
-&& wget http://www.leptonica.com/source/leptonica-1.74.1.tar.gz \
-&& tar xvf leptonica-1.74.1.tar.gz \
-&& cd leptonica-1.74.1 \
-&& ./configure \
-&& make \
-&& make install \
-&& git clone https://github.com/tesseract-ocr/tesseract.git \
-&& cd tesseract \
-&& ./autogen.sh \
-&& ./configure --enable-debug \ 
-&& LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" \
-&& make \ 
-&& make install \
-&& make install-langs \
-&& ldconfig \
 && install2.r --error afex \
 Amelia \
 animation \
