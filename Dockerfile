@@ -98,6 +98,7 @@ janitor \
 knitr \
 leaflet \
 leaps \
+lessR \
 lmtest \
 magick \
 magrittr \
