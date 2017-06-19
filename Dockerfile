@@ -136,6 +136,7 @@ shinyFiles \
 shinydashboard \
 shinyjs \
 showtext \
+sigr \
 stringdist \
 summarytools \
 tester \
@@ -151,6 +152,7 @@ udunits2 \
 unrtf \
 validate \
 viridis \
+wesanderson \
 wordcloud \ 
 VIM \
 && Rscript -e 'devtools::install_github(c("hadley/colformat","hadley/precis","ropenscilabs/skimr","dgrtwo/gganimate","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","hrbrmstr/hrbrthemes","thomasp85/tweenr","hafen/geofacet","njtierney/narnia","krlmlr/here","krlmlr/rprojroot","ropenscilabs/packagemetrics","jeremystan/aargh","r-lib/boxes","ropenscilabs/available","ropenscilabs/data-packages","hrbrmstr/waffle"))' \
