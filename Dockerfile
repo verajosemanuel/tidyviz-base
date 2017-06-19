@@ -18,16 +18,11 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libgeos++-dev \
   libproj-dev \
   libspatialite-dev \
-  netcdf-bin \
   openjdk-7-jre \
   openjdk-7-jdk \
   libv8-3.14-dev \
   libgsl0-dev \
   libgtk2.0-dev \
-  r-cran-rgtk2 \
-  r-cran-cairodevice \
-  r-cran-rgl \
-  r-cran-tkrplot \
   xfonts-base \
   libnlopt-dev \
   libgomp1 \
@@ -38,11 +33,6 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libpng12-dev \
   libtiff5-dev \
   libjpeg62-turbo-dev \
-  libtool \
-  zlib1g-dev \
-  automake \
-  autoconf-archive \
-  pkg-config \
   && . /etc/environment \
 && install2.r --error afex \
 Amelia \
