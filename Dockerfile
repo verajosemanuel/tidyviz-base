@@ -96,11 +96,13 @@ hunspell \
 huxtable \
 igraph \
 janitor \
+kableExtra \
 knitr \
 leaflet \
 leaps \
 lessR \
 lmtest \
+logging \
 magick \
 magrittr \
 manipulate \
@@ -156,7 +158,7 @@ viridis \
 wesanderson \
 wordcloud \ 
 VIM \
-&& Rscript -e 'devtools::install_github(c("hadley/colformat","hadley/precis","ropenscilabs/skimr","dgrtwo/gganimate","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","hrbrmstr/hrbrthemes","thomasp85/tweenr","hafen/geofacet","njtierney/narnia","krlmlr/here","krlmlr/rprojroot","ropenscilabs/packagemetrics","jeremystan/aargh","r-lib/boxes","ropenscilabs/available","ropenscilabs/data-packages","hrbrmstr/waffle"))' \
+&& Rscript -e 'devtools::install_github(c("hadley/colformat","hadley/precis","hadley/strict","ropenscilabs/skimr","dgrtwo/gganimate","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","hrbrmstr/hrbrthemes","thomasp85/tweenr","hafen/geofacet","njtierney/narnia","krlmlr/here","krlmlr/rprojroot","ropenscilabs/packagemetrics","jeremystan/aargh","r-lib/boxes","ropenscilabs/available","ropenscilabs/data-packages","hrbrmstr/waffle","stefanedwards/lemon"))' \
 && Rscript -e 'extrafont::font_import(prompt = FALSE)' \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
