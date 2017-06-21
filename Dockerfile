@@ -37,6 +37,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
 && install2.r --error afex \
 Amelia \
 animation \
+anim.plots \
 antiword \
 anytime \
 assertive \
