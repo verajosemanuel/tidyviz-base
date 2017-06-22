@@ -140,6 +140,7 @@ shinydashboard \
 shinyjs \
 showtext \
 sigr \
+Simpsons \
 stringdist \
 summarytools \
 tester \
