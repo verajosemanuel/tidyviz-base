@@ -113,6 +113,7 @@ NMF \
 optparse \
 pathological \
 pdftools \
+pixiedust \
 plotly \
 plotrr \
 prettydoc \
