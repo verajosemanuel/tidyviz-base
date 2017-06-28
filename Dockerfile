@@ -100,7 +100,6 @@ kableExtra \
 knitr \
 leaflet \
 leaps \
-lessR \
 lmtest \
 logging \
 magick \
