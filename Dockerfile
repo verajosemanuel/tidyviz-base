@@ -142,6 +142,7 @@ shinyjs \
 showtext \
 sigr \
 Simpsons \
+sparklyr \
 stringdist \
 summarytools \
 tester \
