@@ -102,6 +102,7 @@ leaflet \
 leaps \
 lmtest \
 logging \
+lumberjack \
 magick \
 magrittr \
 manipulate \
