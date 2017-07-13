@@ -56,6 +56,7 @@ countrycode \
 data.table \
 dbplyr \
 desctable \
+DescTools \
 diffobj \
 directlabels \
 DT \
