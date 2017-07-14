@@ -51,6 +51,7 @@ cld3 \
 clickR \
 cluster \
 colorspace \
+corrr \
 corrplot \
 countrycode \
 data.table \
