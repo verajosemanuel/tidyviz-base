@@ -55,6 +55,7 @@ colorspace \
 corrr \
 corrplot \
 countrycode \
+ctv \
 data.table \
 dbplyr \
 desctable \
