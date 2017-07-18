@@ -144,6 +144,7 @@ shinyjs \
 showtext \
 sigr \
 Simpsons \
+SnowballC \
 sparklyr \
 stringdist \
 summarytools \
