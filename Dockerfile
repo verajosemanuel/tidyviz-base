@@ -52,6 +52,7 @@ cld3 \
 clickR \
 cluster \
 colorspace \
+constants \
 corrr \
 corrplot \
 countrycode \
