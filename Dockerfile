@@ -149,6 +149,7 @@ showtext \
 sigr \
 Simpsons \
 SnowballC \
+sos \
 sparklyr \
 stringdist \
 summarytools \
