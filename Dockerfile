@@ -46,6 +46,7 @@ assertthat \
 C50 \
 car \
 caret \
+checkmate \
 chunked \
 cld2 \
 cld3 \
@@ -69,6 +70,7 @@ extrafont \
 factoextra \
 filesstrings \
 flexdashboard \
+foreign \
 formatR \
 formattable \
 futile.logger \
