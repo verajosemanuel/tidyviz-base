@@ -76,6 +76,7 @@ formattable \
 futile.logger \
 gbm \
 GGally \
+ggalt \
 ggbeeswarm \
 ggforce \
 ggfortify \
@@ -84,6 +85,7 @@ ggmap \
 ggraph \
 ggrepel \
 ggsci \
+ggtern \
 ggThemeAssist \
 ggthemes \
 ggvis \
