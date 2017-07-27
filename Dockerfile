@@ -46,6 +46,7 @@ assertthat \
 C50 \
 car \
 caret \
+charlatan \
 checkmate \
 chunked \
 cld2 \
@@ -124,6 +125,7 @@ optparse \
 pathological \
 pdftools \
 pixiedust \
+pkggraph \
 plotly \
 plotrr \
 prettydoc \
@@ -144,6 +146,7 @@ rmdformats \
 rprojroot \
 rticles \
 scatterplot3d \
+sessioninfo \
 shiny \
 shinyBS \
 shinyFiles \
