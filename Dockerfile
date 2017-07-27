@@ -43,6 +43,7 @@ anytime \
 assertive \
 assertr \
 assertthat \
+beepr \
 C50 \
 car \
 caret \
@@ -53,11 +54,13 @@ cld2 \
 cld3 \
 clickR \
 cluster \
+CodeDepends \
 colorspace \
 constants \
 corrr \
 corrplot \
 countrycode \
+cronR \
 ctv \
 data.table \
 dbplyr \
@@ -79,6 +82,7 @@ gbm \
 GGally \
 ggalt \
 ggbeeswarm \
+ggbiplot \
 ggforce \
 ggfortify \
 ggiraph \
@@ -116,6 +120,7 @@ lumberjack \
 magick \
 magrittr \
 manipulate \
+margins \
 microbenchmark \
 mime \
 munsell \
@@ -138,6 +143,7 @@ RColorBrewer \
 Rcpp \
 RCurl \
 readtext \
+ReporteRs \
 revealjs \
 rio \
 riverplot \
@@ -160,9 +166,12 @@ sos \
 sparklyr \
 stringdist \
 summarytools \
+tables \
+tatoo \
 tester \
 textclean \
 textreadr \
+tictoc \
 tidytext \
 tidyxl \
 tint \
