@@ -78,6 +78,7 @@ foreign \
 formatR \
 formattable \
 futile.logger \
+fuzzyjoin \
 gbm \
 GGally \
 ggalt \
@@ -124,6 +125,7 @@ margins \
 microbenchmark \
 mime \
 munsell \
+naturalsort \
 neuralnet \
 NMF \
 optparse \
