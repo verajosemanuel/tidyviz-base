@@ -87,6 +87,7 @@ ggforce \
 ggfortify \
 ggiraph \
 ggmap \
+ggpubr \
 ggraph \
 ggrepel \
 ggsci \
@@ -138,6 +139,7 @@ prettydoc \
 profvis \
 psych \
 qdapRegex \
+randomForestExplainer \
 RTextTools \
 R.utils \
 RColorBrewer \
