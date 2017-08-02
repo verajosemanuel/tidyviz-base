@@ -105,6 +105,7 @@ here \
 hexbin \
 highcharter \
 Hmisc \
+htmltab \
 htmlwidgets \
 httpuv \
 hunspell \
@@ -128,6 +129,7 @@ munsell \
 naturalsort \
 neuralnet \
 NMF \
+numform \
 optparse \
 pathological \
 pdftools \
