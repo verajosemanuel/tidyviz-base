@@ -182,6 +182,7 @@ tidyxl \
 tint \
 tm \
 topicmodels \
+TTR \
 tufte \
 udunits2 \
 unrtf \
