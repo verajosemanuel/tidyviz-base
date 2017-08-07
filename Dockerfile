@@ -125,6 +125,7 @@ manipulate \
 margins \
 microbenchmark \
 mime \
+missMDA \
 munsell \
 naturalsort \
 neuralnet \
