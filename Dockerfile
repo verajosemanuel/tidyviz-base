@@ -77,6 +77,7 @@ flexdashboard \
 foreign \
 formatR \
 formattable \
+fst \
 futile.logger \
 fuzzyjoin \
 gbm \
