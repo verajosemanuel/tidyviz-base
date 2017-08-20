@@ -62,6 +62,7 @@ corrplot \
 countrycode \
 cronR \
 ctv \
+datapasta \
 data.table \
 dbplyr \
 desctable \
