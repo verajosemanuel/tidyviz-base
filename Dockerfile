@@ -95,6 +95,7 @@ ggsci \
 ggtern \
 ggThemeAssist \
 ggthemes \
+ggtree \
 ggvis \
 glue \
 gmodels \
