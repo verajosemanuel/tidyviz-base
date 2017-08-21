@@ -60,6 +60,7 @@ constants \
 corrr \
 corrplot \
 countrycode \
+cowplot \
 cronR \
 ctv \
 datapasta \
