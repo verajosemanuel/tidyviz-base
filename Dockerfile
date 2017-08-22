@@ -44,6 +44,7 @@ assertive \
 assertr \
 assertthat \
 beepr \
+blastula \
 C50 \
 car \
 caret \
