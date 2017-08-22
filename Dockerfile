@@ -99,6 +99,7 @@ ggtern \
 ggThemeAssist \
 ggthemes \
 ggvis \
+ghibli \
 glue \
 gmodels \
 gpclib \
