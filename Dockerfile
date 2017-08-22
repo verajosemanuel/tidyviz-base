@@ -86,6 +86,7 @@ gbm \
 GGally \
 ggalt \
 ggbeeswarm \
+ggfittext \
 ggforce \
 ggfortify \
 ggiraph \
