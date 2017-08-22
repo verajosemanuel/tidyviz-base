@@ -3,7 +3,7 @@ FROM rocker/ropensci:latest
 LABEL maintainer "vera.josemanuel@gmail.com"
 
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
-  ImageMagick \
+  imagemagick \
   libmagick++-dev \
   libxml2-dev \
   libcairo2-dev \
@@ -26,11 +26,11 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   xfonts-base \
   libnlopt-dev \
   libgomp1 \
-  libicu52 \
+  libicu55 \
   libicu-dev \
   libssl-dev \
   libpango1.0-dev \
-  libpng12-dev \
+  libpng-dev \
   libtiff5-dev \
   libjpeg62-turbo-dev \
   && . /etc/environment \
