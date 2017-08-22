@@ -13,20 +13,18 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libpq-dev \
   libudunits2-dev \
   libgdal-dev \
-  libgdal1-dev \
   libgeos-dev \
   libgeos++-dev \
   libproj-dev \
   libspatialite-dev \
-  openjdk-7-jre \
-  openjdk-7-jdk \
+  openjdk-8-jre \
+  openjdk-8-jdk \
   libv8-3.14-dev \
   libgsl0-dev \
   libgtk2.0-dev \
   xfonts-base \
   libnlopt-dev \
   libgomp1 \
-  libicu55 \
   libicu-dev \
   libssl-dev \
   libpango1.0-dev \
