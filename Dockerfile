@@ -61,6 +61,8 @@ countrycode \
 cowplot \
 cronR \
 ctv \
+DataCombine \
+dataMaid \
 datapasta \
 data.table \
 dbplyr \
