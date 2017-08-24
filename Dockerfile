@@ -73,6 +73,7 @@ directlabels \
 DT \
 errors \
 extrafont \
+FactoMineR \
 factoextra \
 filesstrings \
 flexdashboard \
