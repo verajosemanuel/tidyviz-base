@@ -98,6 +98,7 @@ ggThemeAssist \
 ggthemes \
 ggvis \
 ghibli \
+gistr \
 glue \
 gmodels \
 gpclib \
