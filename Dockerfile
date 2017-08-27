@@ -33,6 +33,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libpng-dev \
   libtiff5-dev \
   libjpeg62-turbo-dev \
+  r-cran-rgtk2 \
   && . /etc/environment \
 && install2.r --error afex \
 Amelia \
