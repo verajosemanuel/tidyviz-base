@@ -116,6 +116,7 @@ Hmisc \
 htmltab \
 htmlwidgets \
 httpuv \
+humanFormat \
 hunspell \
 huxtable \
 igraph \
@@ -148,6 +149,7 @@ pkggraph \
 plotly \
 plotrr \
 prettydoc \
+prettyunits \
 profvis \
 psych \
 qdapRegex \
