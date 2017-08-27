@@ -140,6 +140,7 @@ neuralnet \
 NMF \
 numform \
 optparse \
+papeR \
 pathological \
 pdftools \
 pixiedust \
