@@ -163,6 +163,7 @@ RCurl \
 readtext \
 ReporteRs \
 revealjs \
+rhandsontable \
 rio \
 riverplot \
 rmarkdown \
