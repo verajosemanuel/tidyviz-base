@@ -2,6 +2,8 @@ FROM rocker/ropensci:latest
 
 LABEL maintainer "vera.josemanuel@gmail.com"
 
+ADD github_installs.R /tmp/github_installs.R
+
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   imagemagick \
   libmagick++-dev \
@@ -31,6 +33,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libpng-dev \
   libtiff5-dev \
   libjpeg62-turbo-dev \
+  r-cran-rgtk2 \
   && . /etc/environment \
 && install2.r --error afex \
 Amelia \
@@ -61,6 +64,8 @@ countrycode \
 cowplot \
 cronR \
 ctv \
+DataCombine \
+dataMaid \
 datapasta \
 data.table \
 dbplyr \
@@ -71,6 +76,7 @@ directlabels \
 DT \
 errors \
 extrafont \
+FactoMineR \
 factoextra \
 filesstrings \
 flexdashboard \
@@ -84,7 +90,6 @@ gbm \
 GGally \
 ggalt \
 ggbeeswarm \
-ggfittext \
 ggforce \
 ggfortify \
 ggiraph \
@@ -112,6 +117,7 @@ Hmisc \
 htmltab \
 htmlwidgets \
 httpuv \
+humanFormat \
 hunspell \
 huxtable \
 igraph \
@@ -130,13 +136,13 @@ margins \
 microbenchmark \
 mime \
 missMDA \
-mlDNA \
 munsell \
 naturalsort \
 neuralnet \
 NMF \
 numform \
 optparse \
+papeR \
 pathological \
 pdftools \
 pixiedust \
@@ -144,6 +150,7 @@ pkggraph \
 plotly \
 plotrr \
 prettydoc \
+prettyunits \
 profvis \
 psych \
 qdapRegex \
@@ -197,7 +204,7 @@ viridis \
 wesanderson \
 wordcloud \ 
 VIM \
-&& Rscript -e 'devtools::install_github(c("hadley/colformat","hadley/precis","hadley/strict","ropenscilabs/skimr","dgrtwo/gganimate","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","hrbrmstr/hrbrthemes","thomasp85/tweenr","hafen/geofacet","njtierney/narnia","krlmlr/here","krlmlr/rprojroot","ropenscilabs/packagemetrics","jeremystan/aargh","r-lib/boxes","ropenscilabs/available","ropenscilabs/data-packages","hrbrmstr/waffle","stefanedwards/lemon","Stan125/GREA","lchiffon/wordcloud2","bhaskarvk/leaflet.extras","vqv/ggbiplot","MilesMcBain/gistfo","rich-iannone/blastula"))' \
+&& Rscript /tmp/github_installs.R \
 && Rscript -e 'extrafont::font_import(prompt = FALSE)' \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
