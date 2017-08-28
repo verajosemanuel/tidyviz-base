@@ -123,6 +123,7 @@ huxtable \
 igraph \
 janitor \
 kableExtra \
+Kmisc \
 knitr \
 leaflet \
 leaps \
