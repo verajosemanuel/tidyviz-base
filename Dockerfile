@@ -69,6 +69,7 @@ dataCompareR \
 dataMaid \
 datapasta \
 data.table \
+dataPreparation \
 dbplyr \
 desctable \
 DescTools \
