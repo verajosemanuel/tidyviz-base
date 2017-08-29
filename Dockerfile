@@ -92,6 +92,7 @@ gbm \
 GGally \
 ggalt \
 ggbeeswarm \
+ggcorrplot \
 ggforce \
 ggfortify \
 ggiraph \
