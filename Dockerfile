@@ -96,6 +96,7 @@ ggforce \
 ggfortify \
 ggiraph \
 ggmap \
+ggplotgui \
 ggpubr \
 ggraph \
 ggrepel \
