@@ -188,6 +188,7 @@ SnowballC \
 sos \
 sparklyr \
 stringdist \
+sugrrants \
 summarytools \
 tables \
 tatoo \
