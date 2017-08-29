@@ -65,6 +65,7 @@ cowplot \
 cronR \
 ctv \
 DataCombine \
+dataCompareR \
 dataMaid \
 datapasta \
 data.table \
