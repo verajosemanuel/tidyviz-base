@@ -110,6 +110,7 @@ ghibli \
 gistr \
 glue \
 gmodels \
+googledrive \
 gpclib \
 gridExtra \
 gsubfn \
