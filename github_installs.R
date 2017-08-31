@@ -1,4 +1,6 @@
-library(devtools)
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(devtools)
+
 install_github("hadley/readr")
 install_github("hadley/colformat")
 install_github("hadley/precis")
@@ -31,4 +33,110 @@ install_github("wilkox/ggfittext")
 install_github("tidyverse/googledrive")
 install_github("rich-iannone/pointblank")
 install_github("EmilHvitfeldt/ggpage")
+
+
+
+# insertion in Rprofile ---------------------------------------------------
+
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(pathological)
+
+
+if (!file.exists("~/.Rprofile"))
+  # only create if not already there
+  file.create("~/.Rprofile")
+
+perfil <- pathological::r_profile()
+
+cat(
+  "options(prompt='R> ', digits=4)
+  
+  options(stringsAsFactors=FALSE)
+  
+  if(interactive())
+  try(fortunes::fortune(), silent=TRUE)
+  
+  .Last = function() {
+  cond = suppressWarnings(!require(fortunes, quietly=TRUE))
+  if(cond)
+  try(install.packages('fortunes'), silent=TRUE)
+  message('Goodbye at ', date(), '\n')
+  }
+  
+  # aliases
+  s <- base::summary
+  h <- utils::head
+  n <- base::names
+
+  .First <- function(){
+  library(fcuk)
+  }
+  ", file = perfil, append=TRUE, sep = "\n")
+
+
+
+
+# Insertion in Renviron ---------------------------------------------------
+
+
+if (!file.exists("~/.Renviron"))
+  # only create if not already there
+  file.create("~/.Renviron")
+
+environ <- "~/.Renviron"
+
+
+cat("R_ZIPCMD = \"C:/Rtools/bin/zip.exe\"",
+    file = environ,
+    append = TRUE,
+    sep = "\n")
+
+
+# Insertion in Snippets ---------------------------------------------------
+
+
+if (!file.exists("~/.R/snippets/r.snippets"))
+  # only create if not already there
+  file.create("~/.R/snippets/r.snippets")
+
+snipets <- "~/.R/snippets/r.snippets"
+cat("snippet zz
+```
+${0}
+```{r}
+
+snippet zx
+############################################################
+#                                                          #
+#                     ${0}                       ####
+#                                                          #
+############################################################
+",
+    file = snipets,
+    append = TRUE,
+    sep = "\n")
+
+
+
+mdsnip <- "~/.R/snippets/markdown.snippets"
+cat("snippet ts
+`r paste(\"#\", date(), \"------------------------------\n\")`
+
+snippet zz
+```
+${0}
+```{r}
+
+snippet zx
+############################################################
+#                                                          #
+#                     ${0}                       ####
+#                                                          #
+############################################################
+",
+    file = snipets,
+    append = TRUE,
+    sep = "\n")
+
+
 
