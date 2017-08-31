@@ -154,6 +154,7 @@ pixiedust \
 pkggraph \
 plotly \
 plotrr \
+pointblank \
 prettydoc \
 prettyunits \
 profvis \
