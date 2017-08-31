@@ -29,4 +29,5 @@ install_github("MilesMcBain/gistfo")
 install_github("rich-iannone/blastula")
 install_github("wilkox/ggfittext")
 install_github("tidyverse/googledrive")
+install_github("rich-iannone/pointblank")
 

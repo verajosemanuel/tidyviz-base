@@ -111,6 +111,7 @@ gistr \
 glue \
 gmodels \
 gpclib \
+ggpubr \
 gridExtra \
 gsubfn \
 gtable \
@@ -154,7 +155,6 @@ pixiedust \
 pkggraph \
 plotly \
 plotrr \
-pointblank \
 prettydoc \
 prettyunits \
 profvis \
