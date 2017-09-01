@@ -80,6 +80,7 @@ errors \
 extrafont \
 FactoMineR \
 factoextra \
+fBasics \
 filesstrings \
 flexdashboard \
 foreign \
