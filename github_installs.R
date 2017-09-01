@@ -1,5 +1,5 @@
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(devtools)
+pacman::p_load(devtools,fcuk)
 
 install_github("hadley/readr")
 install_github("hadley/colformat")
