@@ -34,7 +34,7 @@ install_github("tidyverse/googledrive")
 install_github("rich-iannone/pointblank")
 install_github("EmilHvitfeldt/ggpage")
 install_github("hrbrmstr/msgxtractr")
-
+install_github("krlmlr/styler")
 
 
 # insertion in Rprofile ---------------------------------------------------
