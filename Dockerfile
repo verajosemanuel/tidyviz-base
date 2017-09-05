@@ -112,10 +112,10 @@ gistr \
 glue \
 gmodels \
 gpclib \
-ggpubr \
 gridExtra \
 gsubfn \
 gtable \
+gtrendsR \
 here \
 hexbin \
 highcharter \
