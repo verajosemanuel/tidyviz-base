@@ -131,6 +131,7 @@ janitor \
 kableExtra \
 Kmisc \
 knitr \
+lambda.tools \
 leaflet \
 leaps \
 lmtest \
