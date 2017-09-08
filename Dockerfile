@@ -199,6 +199,7 @@ tatoo \
 tester \
 textclean \
 textreadr \
+tibbletime \
 tictoc \
 tidytext \
 tidyxl \
