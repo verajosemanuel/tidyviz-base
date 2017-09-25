@@ -214,6 +214,7 @@ udunits2 \
 unrtf \
 validate \
 viridis \
+vtreat \
 wesanderson \
 wordcloud \ 
 VIM \
