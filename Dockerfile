@@ -189,6 +189,7 @@ shinyjs \
 showtext \
 sigr \
 Simpsons \
+SimDesign \
 SnowballC \
 sos \
 sparklyr \
