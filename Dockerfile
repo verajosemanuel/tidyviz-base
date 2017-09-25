@@ -153,6 +153,7 @@ optparse \
 papeR \
 pathological \
 pdftools \
+pinp \
 pixiedust \
 pkggraph \
 plotly \
