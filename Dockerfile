@@ -102,6 +102,7 @@ ggplotgui \
 ggpubr \
 ggraph \
 ggrepel \
+ggridges \
 ggsci \
 ggtern \
 ggThemeAssist \
