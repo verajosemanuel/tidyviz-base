@@ -35,6 +35,7 @@ install_github("rich-iannone/pointblank")
 install_github("EmilHvitfeldt/ggpage")
 install_github("hrbrmstr/msgxtractr")
 install_github("krlmlr/styler")
+install_github("ropensci/writexl")
 
 
 # insertion in Rprofile ---------------------------------------------------
