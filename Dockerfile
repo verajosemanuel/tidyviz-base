@@ -57,6 +57,7 @@ clickR \
 cluster \
 CodeDepends \
 colorspace \
+colourpicker \
 constants \
 corrr \
 corrplot \
@@ -94,8 +95,11 @@ GGally \
 ggalt \
 ggbeeswarm \
 ggcorrplot \
+ggedit \
 ggforce \
 ggfortify \
+gghighlight \
+ggimage \
 ggiraph \
 ggmap \
 ggplotgui \
@@ -104,6 +108,7 @@ ggraph \
 ggrepel \
 ggridges \
 ggsci \
+ggseas \
 ggtern \
 ggThemeAssist \
 ggthemes \
@@ -142,10 +147,14 @@ magick \
 magrittr \
 manipulate \
 margins \
+mi \
+mice \
 microbenchmark \
 mime \
+missForest \
 missMDA \
 munsell \
+naniar \
 naturalsort \
 neuralnet \
 NMF \
@@ -215,6 +224,7 @@ udunits2 \
 unrtf \
 validate \
 viridis \
+visdat \
 vtreat \
 wesanderson \
 wordcloud \ 
