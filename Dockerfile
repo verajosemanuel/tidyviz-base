@@ -138,6 +138,7 @@ kableExtra \
 Kmisc \
 knitr \
 lambda.tools \
+later \
 leaflet \
 leaps \
 lmtest \
