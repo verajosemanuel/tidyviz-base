@@ -54,6 +54,7 @@ chunked \
 cld2 \
 cld3 \
 clickR \
+clipr \
 cluster \
 CodeDepends \
 colorspace \
