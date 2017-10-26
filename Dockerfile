@@ -200,6 +200,7 @@ showtext \
 sigr \
 Simpsons \
 SimDesign \
+sinew \
 SnowballC \
 sos \
 sparklyr \
