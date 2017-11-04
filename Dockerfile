@@ -2,8 +2,6 @@ FROM rocker/ropensci:latest
 
 LABEL maintainer "vera.josemanuel@gmail.com"
 
-ADD github_installs.R /tmp/github_installs.R
-
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   imagemagick \
   libmagick++-dev \
