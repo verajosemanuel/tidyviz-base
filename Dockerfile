@@ -37,8 +37,12 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
 RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(ask=FALSE); biocLite("EBImage", ask=FALSE); biocLite("ggtree", ask=FALSE)'  > /tmp/packages_bioc.R \
 && install2.r --error antiword \
 ascii \
+assertive \
+assertr \
+assertthat \
 beepr \
 charlatan \
+checkmate \
 checkpoint \
 clipr \
 CodeDepends \
@@ -85,13 +89,20 @@ prettyunits \
 profvis \
 progress \
 R.utils \
+Rcpp \
+RcppEigen \
+RcppQuantuccia \
 readtext \
 reticulate \
 rio \
+rprojroot \
 sessioninfo \
+sos \
 tester \
 textreadr \
 unrtf \
+validate \
+XML \
 && Rscript -e 'extrafont::font_import(prompt = FALSE)' \
 && echo "install.packages('rJava', repos='http://www.rforge.net/', configure.args='--disable-Xrs')" | R --no-save \
 && R CMD javareconf \
