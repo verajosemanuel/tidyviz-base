@@ -37,11 +37,66 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   && . /etc/environment 
 
 RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(ask=FALSE); biocLite("EBImage", ask=FALSE); biocLite("ggtree", ask=FALSE)'  > /tmp/packages_bioc.R \
-&& install2.r --error extrafont \
+&& install2.r --error antiword \
+ascii \
+beepr \
+charlatan \
+checkpoint \
+clipr \
+CodeDepends \
+constants \
+cranlogs \
+CRANsearcher \
+cronR \
+ctv \
+data.table \
+datapasta \
+extrafont \
+formatR \
+fst \
+futile.logger \
+gistr \
+glue \
+googlesheets \
+here \
+Hmisc \
+htmltab \
+htmltools \
+humanFormat \
+Kmisc \
+later \
+lessR \
+lintr \
+logging \
+magrittr \
+mallet \
+MASS \
+Matrix \
+microbenchmark \
+mime \
+miniCRAN \
+naturalsort \
+numform \
+officer \
+optparse \
+pathological \
+pdftools \
+plumber \
+pool \
+prettyunits \
+profvis \
+progress \
+R.utils \
+readtext \
+reticulate \
+rio \
+sessioninfo \
+tester \
+textreadr \
+unrtf \
 && Rscript -e 'extrafont::font_import(prompt = FALSE)' \
 && echo "install.packages('rJava', repos='http://www.rforge.net/', configure.args='--disable-Xrs')" | R --no-save \
 && R CMD javareconf \
-&& install2.r --error mallet \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
