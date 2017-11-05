@@ -6,11 +6,11 @@ image            | description                               | size   | metrics 
 ---------------- | ----------------------------------------- | ------ | ------- | --------------
 [tidyviz-base](https://hub.docker.com/r/jvera/tidyviz-base)            |  base for tidyviz   |[![](https://images.microbadger.com/badges/image/jvera/tidyviz-base.svg)](https://microbadger.com/images/jvera/tidyviz-base "Get your own image badge on microbadger.com")| [![](https://img.shields.io/docker/pulls/jvera/tidyviz-base.svg)](https://hub.docker.com/r/jvera/tidyviz-base) | [![](https://img.shields.io/docker/automated/jvera/tidyviz-base.svg)](https://hub.docker.com/r/jvera/tidyviz-base/builds)
 
-base is rocker/verse 
+Built upon rocker/ropensci:latest
 
-#### This is a base image for tidyviz. just some libraries and github packages plus rJava
+#### This is a bare-bones image for tidyviz. just some libraries and github packages plus rJava
 
-#### PLEASE CONSIDER tidyviz instead for all packages and features
+#### PLEASE CONSIDER any other tidyviz image instead for all packages and features (wrangler, stats, extra...)
 
 ## Quick Reference
 
