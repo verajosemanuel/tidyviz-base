@@ -41,6 +41,7 @@ assertive \
 assertr \
 assertthat \
 beepr \
+brms \
 charlatan \
 checkmate \
 checkpoint \
@@ -97,6 +98,8 @@ reticulate \
 rio \
 rprojroot \
 sessioninfo \
+shiny \
+shinystan \
 sos \
 tester \
 textreadr \
