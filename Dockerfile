@@ -2,6 +2,8 @@ FROM rocker/ropensci:latest
 
 LABEL maintainer "vera.josemanuel@gmail.com"
 
+ADD github_installs.R /tmp/github_installs.R
+
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   imagemagick \
   libmagick++-dev \
@@ -41,7 +43,6 @@ assertive \
 assertr \
 assertthat \
 beepr \
-brms \
 charlatan \
 checkmate \
 checkpoint \
@@ -61,6 +62,7 @@ futile.logger \
 gistr \
 glue \
 googlesheets \
+googledrive \
 here \
 Hmisc \
 htmltab \
@@ -85,6 +87,7 @@ optparse \
 pathological \
 pdftools \
 plumber \
+pointblank \
 pool \
 prettyunits \
 profvis \
@@ -93,22 +96,24 @@ R.utils \
 Rcpp \
 RcppEigen \
 RcppQuantuccia \
+readr \
 readtext \
 reticulate \
 rio \
 rprojroot \
 sessioninfo \
-shiny \
-shinystan \
 sos \
 tester \
 textreadr \
+tidyverse \
 unrtf \
 validate \
+writexl \
 XML \
 && Rscript -e 'extrafont::font_import(prompt = FALSE)' \
 && echo "install.packages('rJava', repos='http://www.rforge.net/', configure.args='--disable-Xrs')" | R --no-save \
 && R CMD javareconf \
+&& Rscript /tmp/github_installs.R \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
