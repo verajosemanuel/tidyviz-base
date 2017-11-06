@@ -13,9 +13,6 @@ install_github("ropenscilabs/available")
 install_github("ropenscilabs/data-packages")
 install_github("Stan125/GREA")
 install_github("MilesMcBain/gistfo")
-install_github("krlmlr/styler")
-
-
 
 
 # insertion in Rprofile ---------------------------------------------------

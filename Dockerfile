@@ -86,6 +86,7 @@ officer \
 optparse \
 pathological \
 pdftools \
+pkggraph \
 plumber \
 pointblank \
 pool \
@@ -96,6 +97,7 @@ R.utils \
 Rcpp \
 RcppEigen \
 RcppQuantuccia \
+RCurl \
 readr \
 readtext \
 reticulate \
@@ -106,6 +108,7 @@ sos \
 tester \
 textreadr \
 tidyverse \
+tidyxl \
 unrtf \
 validate \
 writexl \
