@@ -33,6 +33,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libpng-dev \
   libtiff5-dev \
   libjpeg62-turbo-dev \
+  apt-utils \
+  ed \
   r-cran-rgtk2 \
   && . /etc/environment 
 
