@@ -55,6 +55,7 @@ cronR \
 ctv \
 data.table \
 datapasta \
+devtools \
 extrafont \
 formatR \
 fst \
