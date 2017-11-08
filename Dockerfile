@@ -37,6 +37,9 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   ed \
   r-cran-rgtk2 \
   && . /etc/environment 
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/ \
+  && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
 
 RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(ask=FALSE); biocLite("EBImage", ask=FALSE); biocLite("ggtree", ask=FALSE)'  > /tmp/packages_bioc.R \
 && install2.r --error antiword \
