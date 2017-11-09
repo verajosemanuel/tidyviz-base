@@ -16,7 +16,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   apt-utils \
   ed \
   r-cran-rgtk2 \
-  && . /etc/environment
+  && . /etc/environment \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/ \
   && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
