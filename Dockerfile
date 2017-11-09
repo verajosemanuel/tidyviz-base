@@ -71,3 +71,130 @@ writexl \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
+
+
+# WRANGLING & MUNGING
+
+RUN install2.r --error --deps TRUE Amelia \
+bigrquery \
+Boruta \
+colourpicker \
+condformat \
+clickR \
+DataCombine \
+dataCompareR \
+dataMaid \
+dataPreparation \
+desctable \
+DescTools \
+diffobj \
+dummies \
+factoextra \
+FactoMineR \
+filesstrings \
+fuzzyjoin \
+ghibli \
+gsubfn \
+HH \
+imputeTS \
+janitor \
+likert \
+lumberjack \
+mi \
+mice \
+missForest \
+missMDA \
+naniar \
+sigr \
+sjmisc \
+sjPlot \
+sjstats \
+Simpsons \
+summarytools \
+tabplot \
+tadaatoolbox \
+tatoo \
+unpivotr \
+VIM \
+visdat \
+vtreat \
+wesanderson \
+&& Rscript -e 'devtools::install_github("ColinFay/tidystringdist")' \
+&& Rscript -e 'devtools::install_github("drsimonj/twidlr")' \
+&& apt-get clean \
+&& rm -rf /var/lib/apt/lists/ \
+&& rm -rf /tmp/downloaded_packages/  /tmp/*.rds
+
+
+# STATS, ML, TIME SERIES & TEXT MINING
+
+RUN install2.r --error --deps TRUE afex \
+arules \
+arulesViz \
+bayesAB \
+bayesboot \
+BTYD \
+BTYDplus \
+car \
+caret \
+changepoint \
+chunked \
+C50 \
+cleanNLP \
+confinterpret \
+corrr \
+cshapes \
+effects \
+expss \
+fBasics \
+FFTrees \
+forecTheta \
+gap \
+gapminder \
+gbm \
+glmnet \
+googleLanguageR \
+koRpus \
+lambda.tools \
+leaflet.minicharts \
+leaps \
+lime \
+liquidSVM \
+margins \
+Modeler \
+neuralnet \
+nloptr \
+NMF \
+party \
+PerformanceAnalytics \
+qdapRegex \
+randomForest \
+randomForestExplainer \
+robets \
+rms \
+rpart.plot \
+rpg \
+rsample \
+RTextTools \
+sas7bdat \
+scanstatistics \
+showtext \
+SimDesign \
+stlplus \
+sugrrants \
+sweep \
+textclean \
+tibbletime \
+tictoc \
+tidygraph \
+timetk \
+tidyquant \
+topicmodels \
+WordR \
+wordcloud2 \
+xgboost \
+&& Rscript -e 'devtools::install_github("gabrielrvsc/HDeconometrics")' \
+&& Rscript -e 'devtools::install_github("AppliedDataSciencePartners/xgboostExplainer")' \
+&& apt-get clean \
+&& rm -rf /var/lib/apt/lists/ \
+&& rm -rf /tmp/downloaded_packages/  /tmp/*.rds
