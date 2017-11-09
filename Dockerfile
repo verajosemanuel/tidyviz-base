@@ -80,7 +80,6 @@ bigrquery \
 Boruta \
 colourpicker \
 condformat \
-clickR \
 DataCombine \
 dataCompareR \
 dataMaid \
