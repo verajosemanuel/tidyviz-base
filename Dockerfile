@@ -2,7 +2,7 @@ FROM rocker/ropensci:latest
 
 LABEL maintainer "vera.josemanuel@gmail.com"
 
-ADD github_installs.R /tmp/github_installs.R
+# ADD github_installs.R /tmp/github_installs.R
 
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   imagemagick \
@@ -118,8 +118,6 @@ VIM \
 visdat \
 vtreat \
 wesanderson \
-&& Rscript -e 'devtools::install_github("ColinFay/tidystringdist")' \
-&& Rscript -e 'devtools::install_github("drsimonj/twidlr")' \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
@@ -192,8 +190,6 @@ topicmodels \
 WordR \
 wordcloud2 \
 xgboost \
-&& Rscript -e 'devtools::install_github("gabrielrvsc/HDeconometrics")' \
-&& Rscript -e 'devtools::install_github("AppliedDataSciencePartners/xgboostExplainer")' \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
