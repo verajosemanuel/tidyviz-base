@@ -13,6 +13,10 @@ install_github("ropenscilabs/available")
 install_github("ropenscilabs/data-packages")
 install_github("Stan125/GREA")
 install_github("MilesMcBain/gistfo")
+install_github("gabrielrvsc/HDeconometrics")
+install_github("AppliedDataSciencePartners/xgboostExplainer")
+install_github("ColinFay/tidystringdist")
+install_github("drsimonj/twidlr")
 
 
 # insertion in Rprofile ---------------------------------------------------
