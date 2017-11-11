@@ -105,9 +105,9 @@ missForest \
 missMDA \
 naniar \
 sigr \
-sjmisc \
-sjPlot \
-sjstats \
+# sjmisc \
+# sjPlot \
+# sjstats \
 Simpsons \
 summarytools \
 tabplot \
@@ -125,7 +125,7 @@ wesanderson \
 
 # STATS, ML, TIME SERIES & TEXT MINING
 
-RUN apt-get update -qq && apt-get -y --no-install-recommends install r-cran-rjags
+# RUN apt-get update -qq && apt-get -y --no-install-recommends install r-cran-rjags
 
 RUN install2.r --error --deps TRUE afex \
 arules \
