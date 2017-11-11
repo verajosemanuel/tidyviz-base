@@ -131,8 +131,8 @@ RUN install2.r --error --deps TRUE afex \
 arules \
 bayesAB \
 bayesboot \
-BTYD \
-BTYDplus \
+# BTYD \
+# BTYDplus \
 car \
 caret \
 changepoint \
