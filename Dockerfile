@@ -2,6 +2,7 @@ FROM rocker/ropensci:latest
 
 LABEL maintainer "vera.josemanuel@gmail.com"
 
+ADD github_installs.R /tmp/github_installs.R
 
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   imagemagick \
@@ -54,7 +55,6 @@ officer \
 optparse \
 pathological \
 pkggraph \
-pointblank \
 pool \
 profvis \
 RcppQuantuccia \
@@ -98,7 +98,6 @@ HH \
 imputeTS \
 janitor \
 likert \
-lumberjack \
 mi \
 mice \
 missForest \
@@ -123,3 +122,5 @@ wesanderson \
 # sjmisc \
 # sjPlot \
 # sjstats \
+# pointblank \
+# lumberjack \
