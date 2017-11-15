@@ -118,7 +118,6 @@ wesanderson \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
 
-
 # sjmisc \
 # sjPlot \
 # sjstats \
