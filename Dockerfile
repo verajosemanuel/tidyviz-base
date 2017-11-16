@@ -24,7 +24,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
 
 
 RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(ask=FALSE); biocLite("EBImage", ask=FALSE); biocLite("ggtree", ask=FALSE)'  > /tmp/packages_bioc.R \
-&& install2.r --error ascii \
+&& install2.r --error --deps TRUE ascii \
 assertive \
 beepr \
 checkpoint \
@@ -68,14 +68,7 @@ tidyxl \
 validate \
 writexl \
 && Rscript -e 'extrafont::font_import(prompt = FALSE)' \
-&& apt-get clean \
-&& rm -rf /var/lib/apt/lists/ \
-&& rm -rf /tmp/downloaded_packages/  /tmp/*.rds
-
-
-# WRANGLING & MUNGING
-
-RUN install2.r --error --deps TRUE Amelia \
+&& install2.r --error --deps TRUE Amelia \
 bigrquery \
 Boruta \
 colourpicker \
