@@ -57,6 +57,7 @@ pathological \
 pkggraph \
 pool \
 profvis \
+questionr \
 RcppQuantuccia \
 reticulate \
 rio \
