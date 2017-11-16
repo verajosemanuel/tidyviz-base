@@ -1,6 +1,8 @@
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(devtools,fcuk,tidyverse)
 
+devtools::install_github("hadley/strict")
+
 
 # insertion in Rprofile ---------------------------------------------------
 
@@ -37,6 +39,7 @@ cat(
   .First <- function(){
   library(fcuk)
   library(tidyverse)
+  library(strict)
   }
   ", file = perfil, append=TRUE, sep = "\n")
 
