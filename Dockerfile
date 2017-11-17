@@ -2,7 +2,7 @@ FROM rocker/ropensci:latest
 
 LABEL maintainer "vera.josemanuel@gmail.com"
 
-ADD github_installs.R /tmp/github_installs.R
+# ADD github_installs.R /tmp/github_installs.R
 
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   imagemagick \
@@ -47,7 +47,6 @@ Kmisc \
 later \
 lessR \
 logging \
-mallet \
 miniCRAN \
 naturalsort \
 numform \
@@ -71,7 +70,6 @@ writexl \
 && Rscript -e 'extrafont::font_import(prompt = FALSE)' \
 && install2.r --error --deps TRUE Amelia \
 bigrquery \
-Boruta \
 colourpicker \
 condformat \
 DataCombine \
@@ -83,11 +81,9 @@ DescTools \
 diffobj \
 dummies \
 factoextra \
-FactoMineR \
 filesstrings \
 fuzzyjoin \
 ghibli \
-HH \
 imputeTS \
 janitor \
 likert \
@@ -117,3 +113,7 @@ wesanderson \
 # lumberjack \
 # gsubfn \
 # unpivotr \
+# FactoMineR \ installed as dependency of  dummies
+# mallet \
+# HH \
+# Boruta \
