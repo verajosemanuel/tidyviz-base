@@ -87,7 +87,6 @@ FactoMineR \
 filesstrings \
 fuzzyjoin \
 ghibli \
-gsubfn \
 HH \
 imputeTS \
 janitor \
@@ -103,7 +102,6 @@ summarytools \
 tabplot \
 tadaatoolbox \
 tatoo \
-unpivotr \
 VIM \
 visdat \
 vtreat \
@@ -117,3 +115,5 @@ wesanderson \
 # sjstats \
 # pointblank \
 # lumberjack \
+# gsubfn \
+# unpivotr \
