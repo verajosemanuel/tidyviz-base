@@ -24,7 +24,6 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
 
 
 RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(ask=FALSE); biocLite("EBImage", ask=FALSE); biocLite("ggtree", ask=FALSE)'  > /tmp/packages_bioc.R \
-&& Rscript -e 'extrafont::font_import(prompt = FALSE)' \
 && install2.r --error --deps TRUE Amelia \
 CodeDepends \
 colourpicker \
@@ -83,6 +82,7 @@ VIM \
 visdat \
 vtreat \
 writexl \
+&& Rscript -e 'extrafont::font_import(prompt = FALSE)' \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
