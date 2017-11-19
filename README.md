@@ -8,7 +8,7 @@ image            | description                               | size   | metrics 
 
 Built upon rocker/ropensci:latest
 
-#### This is a bare-bones image for tidyviz. just some libraries and github packages plus rJava
+#### This is a base image for tidyviz. just some libraries and github packages plus rJava
 
 #### PLEASE CONSIDER any other tidyviz image instead for all packages and features (wrangler, stats, extra...)
 
