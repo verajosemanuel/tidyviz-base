@@ -25,7 +25,6 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
 
 RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(ask=FALSE); biocLite("EBImage", ask=FALSE); biocLite("ggtree", ask=FALSE)'  > /tmp/packages_bioc.R \
 && install2.r --error --deps TRUE Amelia \
-CodeDepends \
 colourpicker \
 condformat \
 CRANsearcher \
@@ -38,16 +37,12 @@ dataPreparation \
 desctable \
 DescTools \
 diffobj \
-dummies \
 extrafont \
 factoextra \
 filesstrings \
 futile.logger \
-fuzzyjoin \
 here \
 Hmisc \
-humanFormat \
-imputeTS \
 janitor \
 Kmisc \
 later \
@@ -55,9 +50,7 @@ lessR \
 likert \
 logging \
 mi \
-mice \
 missForest \
-missMDA \
 naniar \
 naturalsort \
 numform \
@@ -75,14 +68,23 @@ summarytools \
 tabplot \
 tadaatoolbox \
 tatoo \
-textreadr \
 tidyxl \
-validate \
 VIM \
 visdat \
-vtreat \
-writexl \
 && Rscript -e 'extrafont::font_import(prompt = FALSE)' \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
+
+## vtreat \
+# writexl \
+# textreadr \
+# validate \
+# humanFormat \
+# imputeTS \
+# missMDA \
+# mice \
+# fuzzyjoin \
+# CodeDepends \
+# dummies \
+
