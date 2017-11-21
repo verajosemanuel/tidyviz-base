@@ -45,7 +45,6 @@ here \
 Hmisc \
 janitor \
 Kmisc \
-later \
 lessR \
 likert \
 logging \
@@ -59,7 +58,6 @@ pkggraph \
 pool \
 profvis \
 questionr \
-reticulate \
 rio \
 sessioninfo \
 sigr \
@@ -68,7 +66,6 @@ summarytools \
 tabplot \
 tadaatoolbox \
 tatoo \
-tidyxl \
 VIM \
 visdat \
 && Rscript -e 'extrafont::font_import(prompt = FALSE)' \
@@ -87,4 +84,6 @@ visdat \
 # fuzzyjoin \
 # CodeDepends \
 # dummies \
-
+# later \
+# reticulate \
+# tidyxl \
