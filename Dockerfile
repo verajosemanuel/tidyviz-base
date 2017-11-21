@@ -2,7 +2,7 @@ FROM rocker/ropensci:latest
 
 LABEL maintainer "vera.josemanuel@gmail.com"
 
-# ADD github_installs.R /tmp/github_installs.R
+ADD github_installs.R /tmp/github_installs.R
 
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   imagemagick \
@@ -68,22 +68,8 @@ tadaatoolbox \
 tatoo \
 VIM \
 visdat \
+&& Rscript /tmp/github_installs.R \
 && Rscript -e 'extrafont::font_import(prompt = FALSE)' \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
-
-## vtreat \
-# writexl \
-# textreadr \
-# validate \
-# humanFormat \
-# imputeTS \
-# missMDA \
-# mice \
-# fuzzyjoin \
-# CodeDepends \
-# dummies \
-# later \
-# reticulate \
-# tidyxl \

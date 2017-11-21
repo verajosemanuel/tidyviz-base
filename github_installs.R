@@ -1,7 +1,6 @@
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(devtools,fcuk,tidyverse)
 
-devtools::install_github("hadley/strict")
 
 
 # insertion in Rprofile ---------------------------------------------------
@@ -18,19 +17,19 @@ perfil <- pathological::r_profile()
 
 cat(
   "options(prompt='R> ', digits=4)
-  
+
   options(stringsAsFactors=FALSE)
-  
+
   if(interactive())
   try(fortunes::fortune(), silent=TRUE)
-  
+
   .Last = function() {
   cond = suppressWarnings(!require(fortunes, quietly=TRUE))
   if(cond)
   try(install.packages('fortunes'), silent=TRUE)
   message('Goodbye at ', date(), '\n')
   }
-  
+
   # aliases
   s <- base::summary
   h <- utils::head
@@ -39,8 +38,5 @@ cat(
   .First <- function(){
   library(fcuk)
   library(tidyverse)
-  library(strict)
   }
   ", file = perfil, append=TRUE, sep = "\n")
-
-
