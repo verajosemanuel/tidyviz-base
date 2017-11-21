@@ -59,7 +59,6 @@ pathological \
 pkggraph \
 pool \
 profvis \
-questionr \
 rio \
 sessioninfo \
 sigr \
@@ -75,3 +74,5 @@ visdat \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
+
+# questionr \
