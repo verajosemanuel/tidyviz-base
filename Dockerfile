@@ -25,10 +25,12 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
 
 RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(ask=FALSE); biocLite("EBImage", ask=FALSE); biocLite("ggtree", ask=FALSE)'  > /tmp/packages_bioc.R \
 && install2.r --error --deps TRUE Amelia \
+charlatan \
 colourpicker \
 condformat \
 CRANsearcher \
 ctv \
+data.table \
 DataCombine \
 dataCompareR \
 dataMaid \
