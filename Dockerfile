@@ -23,8 +23,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
 
 
-RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(ask=FALSE); biocLite("EBImage", ask=FALSE); biocLite("ggtree", ask=FALSE)'  > /tmp/packages_bioc.R \
-&& install2.r --error --deps TRUE Amelia \
+RUN install2.r --error --deps TRUE Amelia \
 charlatan \
 colourpicker \
 condformat \
@@ -76,3 +75,4 @@ visdat \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
 
 # questionr \
+# Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(ask=FALSE); biocLite("EBImage", ask=FALSE); biocLite("ggtree", ask=FALSE)'  > /tmp/packages_bioc.R \
