@@ -32,6 +32,7 @@ ctv \
 data.table \
 DataCombine \
 dataCompareR \
+DataExplorer \
 dataMaid \
 datapasta \
 dataPreparation \
