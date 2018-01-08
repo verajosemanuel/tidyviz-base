@@ -4,7 +4,7 @@ LABEL maintainer "vera.josemanuel@gmail.com"
 
 ADD github_installs.R /tmp/github_installs.R
 
-RUN apt-get update -qq && apt-get -y --no-install-recommends install \
+RUN apt-get update -qq && apt-get -y --allow-unauthenticated --no-install-recommends install \
   imagemagick \
   libgeos++-dev \
   libspatialite-dev \
