@@ -63,10 +63,8 @@ rio \
 sessioninfo \
 sigr \
 Simpsons \
-sjmisc \
 summarytools \
 tabplot \
-tadaatoolbox \
 tatoo \
 VIM \
 visdat \
