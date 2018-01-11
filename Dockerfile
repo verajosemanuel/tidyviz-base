@@ -70,9 +70,9 @@ VIM \
 visdat \
 && Rscript /tmp/github_installs.R \
 && Rscript -e 'extrafont::font_import(prompt = FALSE)' \
-&& Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(ask=FALSE); biocLite("EBImage", ask=FALSE); biocLite("ggtree", ask=FALSE)' > /tmp/packages_bioc.R \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
 
+#&& Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(ask=FALSE); biocLite("EBImage", ask=FALSE); biocLite("ggtree", ask=FALSE)' > /tmp/packages_bioc.R \
 
