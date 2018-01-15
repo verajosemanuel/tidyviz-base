@@ -64,6 +64,7 @@ rio \
 sessioninfo \
 sigr \
 Simpsons \
+snakecase \
 summarytools \
 tabplot \
 tatoo \
