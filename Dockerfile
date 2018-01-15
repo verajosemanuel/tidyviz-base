@@ -59,6 +59,7 @@ pathological \
 pkggraph \
 pool \
 profvis \
+psych \
 rio \
 sessioninfo \
 sigr \
