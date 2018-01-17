@@ -67,6 +67,7 @@ Simpsons \
 snakecase \
 summarytools \
 tabplot \
+tadaatoolbox \
 tatoo \
 VIM \
 visdat \
