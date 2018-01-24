@@ -42,6 +42,7 @@ diffobj \
 extrafont \
 factoextra \
 filesstrings \
+fs \
 futile.logger \
 here \
 Hmisc \
