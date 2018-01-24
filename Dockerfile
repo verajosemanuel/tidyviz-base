@@ -23,7 +23,7 @@ RUN apt-get update -qq && apt-get -y --allow-unauthenticated --no-install-recomm
   && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
 
 
-RUN install2.r --error Amelia \
+RUN install2.r --error --deps TRUE Amelia \
 charlatan \
 colourpicker \
 condformat \
