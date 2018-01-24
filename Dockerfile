@@ -13,6 +13,9 @@ RUN apt-get update -qq && apt-get -y --allow-unauthenticated --no-install-recomm
   libnlopt-dev \
   libgomp1 \
   libjpeg62-turbo-dev \
+  libtool \
+  m4 \
+  automake \
   apt-utils \
   ed \
   r-cran-rgtk2 \
