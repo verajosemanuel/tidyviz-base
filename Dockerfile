@@ -46,6 +46,7 @@ extrafont \
 factoextra \
 filesstrings \
 fs \
+funModeling \
 futile.logger \
 here \
 Hmisc \
