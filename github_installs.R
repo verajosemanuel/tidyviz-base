@@ -20,6 +20,8 @@ cat(
 
   options(stringsAsFactors=FALSE)
 
+  options(scipen = 999)
+
   if(interactive())
   try(fortunes::fortune(), silent=TRUE)
 
