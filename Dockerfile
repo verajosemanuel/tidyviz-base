@@ -42,6 +42,7 @@ dataPreparation \
 desctable \
 DescTools \
 diffobj \
+drake \
 extrafont \
 factoextra \
 filesstrings \
