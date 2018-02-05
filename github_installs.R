@@ -1,13 +1,9 @@
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(devtools,fcuk,tidyverse)
+pacman::p_load(devtools,fcuk,tidyverse,pathological)
 
 
 
 # insertion in Rprofile ---------------------------------------------------
-
-if (!require("pacman")) install.packages("pacman")
-pacman::p_load(pathological)
-
 
 if (!file.exists("~/.Rprofile"))
   # only create if not already there
