@@ -52,7 +52,6 @@ futile.logger \
 here \
 Hmisc \
 janitor \
-Kmisc \
 lessR \
 likert \
 logging \
@@ -83,5 +82,6 @@ visdat \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
 
+# Kmisc \
 #&& Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(ask=FALSE); biocLite("EBImage", ask=FALSE); biocLite("ggtree", ask=FALSE)' > /tmp/packages_bioc.R \
 
