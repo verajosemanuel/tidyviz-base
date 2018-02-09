@@ -75,6 +75,7 @@ summarytools \
 tabplot \
 tadaatoolbox \
 tatoo \
+usethis \
 VIM \
 visdat \
 && Rscript /tmp/github_installs.R \
