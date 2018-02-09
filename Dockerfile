@@ -43,6 +43,7 @@ desctable \
 DescTools \
 diffobj \
 drake \
+errorist \
 extrafont \
 factoextra \
 filesstrings \
