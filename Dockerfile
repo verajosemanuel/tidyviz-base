@@ -75,6 +75,7 @@ summarytools \
 tabplot \
 tadaatoolbox \
 tatoo \
+thinkr \
 usethis \
 VIM \
 visdat \
