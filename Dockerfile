@@ -62,6 +62,7 @@ naniar \
 naturalsort \
 numform \
 pathological \
+PMCMRplus \
 pkggraph \
 pool \
 profvis \
@@ -71,6 +72,7 @@ sessioninfo \
 sigr \
 Simpsons \
 snakecase \
+stranger \
 summarytools \
 tabplot \
 tadaatoolbox \
