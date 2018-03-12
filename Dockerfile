@@ -41,6 +41,7 @@ DataExplorer \
 dataMaid \
 datapasta \
 dataPreparation \
+descriptr \
 desctable \
 DescTools \
 diffobj \
@@ -76,6 +77,7 @@ Simpsons \
 snakecase \
 stranger \
 summarytools \
+tableone \
 tabplot \
 tadaatoolbox \
 tatoo \
