@@ -41,6 +41,7 @@ DataExplorer \
 dataMaid \
 datapasta \
 dataPreparation \
+densityClust \
 descriptr \
 desctable \
 DescTools \
