@@ -75,6 +75,7 @@ rio \
 sessioninfo \
 sigr \
 Simpsons \
+simstudy \
 snakecase \
 stranger \
 summarytools \
