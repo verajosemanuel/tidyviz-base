@@ -38,3 +38,6 @@ cat(
   library(tidyverse)
   }
   ", file = perfil, append=TRUE, sep = "\n")
+
+
+install_github("IndrajeetPatil/ggstatsplot",dependencies = TRUE,upgrade_dependencies = TRUE)
