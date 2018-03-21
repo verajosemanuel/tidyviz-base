@@ -41,3 +41,4 @@ cat(
 
 
 install_github("IndrajeetPatil/ggstatsplot",dependencies = TRUE,upgrade_dependencies = TRUE)
+install_github('thomasp85/farver')
