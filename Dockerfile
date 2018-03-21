@@ -54,6 +54,7 @@ filesstrings \
 fs \
 funModeling \
 futile.logger \
+GGally \
 here \
 Hmisc \
 janitor \
