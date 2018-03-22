@@ -39,6 +39,11 @@ cat(
   }
   ", file = perfil, append=TRUE, sep = "\n")
 
+check.packages <- function(pkg){
+    new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+    if (length(new.pkg)) 
+        install.packages(new.pkg, dependencies = TRUE)
+}
 
-install_github("IndrajeetPatil/ggstatsplot",dependencies = TRUE,upgrade_dependencies = TRUE)
-install_github('thomasp85/farver')
+#install_github("IndrajeetPatil/ggstatsplot",dependencies = TRUE,upgrade_dependencies = TRUE)
+#install_github('thomasp85/farver')
