@@ -44,6 +44,3 @@ check.packages <- function(pkg){
     if (length(new.pkg)) 
         install.packages(new.pkg, dependencies = TRUE)
 }
-
-#install_github("IndrajeetPatil/ggstatsplot",dependencies = TRUE,upgrade_dependencies = TRUE)
-#install_github('thomasp85/farver')
