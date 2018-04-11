@@ -79,6 +79,7 @@ sigr \
 Simpsons \
 simstudy \
 snakecase \
+startup \
 stranger \
 summarytools \
 tableone \
