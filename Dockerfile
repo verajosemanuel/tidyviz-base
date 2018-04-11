@@ -31,6 +31,7 @@ RUN install2.r --error --deps TRUE Amelia \
 archivist \
 charlatan \
 colourpicker \
+compare \
 condformat \
 CRANsearcher \
 ctv \
