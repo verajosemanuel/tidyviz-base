@@ -76,6 +76,7 @@ profvis \
 psych \
 rio \
 sessioninfo \
+showtext \
 sigr \
 Simpsons \
 simstudy \
