@@ -69,6 +69,7 @@ naturalsort \
 numform \
 pathological \
 PMCMRplus \
+pkgdown \
 pkggraph \
 pool \
 profvis \
@@ -78,6 +79,8 @@ sessioninfo \
 sigr \
 Simpsons \
 simstudy \
+sjmisc \
+sjPlot \
 snakecase \
 startup \
 stranger \
