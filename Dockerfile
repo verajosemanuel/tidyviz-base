@@ -80,8 +80,6 @@ showtext \
 sigr \
 Simpsons \
 simstudy \
-sjmisc \
-sjPlot \
 snakecase \
 startup \
 stranger \
