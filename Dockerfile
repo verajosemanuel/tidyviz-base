@@ -52,6 +52,7 @@ errorist \
 extrafont \
 factoextra \
 filesstrings \
+fitdistrplus \
 fs \
 funModeling \
 futile.logger \
@@ -62,6 +63,7 @@ janitor \
 lessR \
 likert \
 logging \
+MASS \
 mi \
 missForest \
 naniar \
