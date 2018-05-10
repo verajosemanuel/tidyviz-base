@@ -74,6 +74,7 @@ PMCMRplus \
 pkgdown \
 pkggraph \
 pool \
+processx \
 profvis \
 psych \
 rio \
