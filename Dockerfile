@@ -29,10 +29,12 @@ RUN apt-get update -qq && apt-get -y --allow-unauthenticated --no-install-recomm
 
 RUN install2.r --error --deps TRUE Amelia \
 archivist \
+bookdown \
 charlatan \
 colourpicker \
 compare \
 condformat \
+cowplot \
 CRANsearcher \
 ctv \
 data.table \
@@ -60,6 +62,7 @@ GGally \
 here \
 Hmisc \
 janitor \
+knitr \
 lessR \
 likert \
 logging \
@@ -77,7 +80,10 @@ pool \
 processx \
 profvis \
 psych \
+R.utils \
 rio \
+rlang \
+rmarkdown \
 sessioninfo \
 showtext \
 sigr \
@@ -96,6 +102,7 @@ usethis \
 VIM \
 visdat \
 workflowr \
+yarrr \
 && Rscript /tmp/configure.R \
 && Rscript -e 'extrafont::font_import(prompt = FALSE)' \
 && apt-get clean \
