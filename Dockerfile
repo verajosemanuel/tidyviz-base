@@ -103,6 +103,7 @@ VIM \
 visdat \
 workflowr \
 yarrr \
+ztable \
 && Rscript /tmp/configure.R \
 && Rscript -e 'extrafont::font_import(prompt = FALSE)' \
 && apt-get clean \
