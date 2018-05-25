@@ -51,6 +51,7 @@ DescTools \
 diffobj \
 drake \
 errorist \
+ERSA \
 extrafont \
 factoextra \
 filesstrings \
