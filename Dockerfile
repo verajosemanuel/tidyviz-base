@@ -89,6 +89,7 @@ showtext \
 sigr \
 Simpsons \
 simstudy \
+SmartEDA \
 snakecase \
 startup \
 stranger \
