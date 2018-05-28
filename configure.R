@@ -1,13 +1,14 @@
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(devtools,fcuk,tidyverse,pathological)
 
-
-
 # insertion in Rprofile ---------------------------------------------------
 
 if (!file.exists("~/.Rprofile"))
   # only create if not already there
   file.create("~/.Rprofile")
+
+if (!file.exists("~/.R/snippets/r.snippets")
+  file.create("~/.R/snippets/r.snippets")
 
 perfil <- pathological::r_profile()
 
@@ -39,6 +40,11 @@ cat(
   }
   ", file = perfil, append=TRUE, sep = "\n")
 
+    
+ cat("snippet p
+	${1:object} %<>% ${0}", file = "~/.R/snippets/r.snippets", append=TRUE, sep = "\n")
+    
+    
 check.packages <- function(pkg){
     new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
     if (length(new.pkg)) 
