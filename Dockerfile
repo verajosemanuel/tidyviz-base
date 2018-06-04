@@ -104,6 +104,7 @@ usethis \
 VIM \
 visdat \
 workflowr \
+xray \
 yarrr \
 ztable \
 && Rscript /tmp/configure.R \
