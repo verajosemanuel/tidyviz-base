@@ -34,6 +34,7 @@ charlatan \
 colourpicker \
 compare \
 condformat \
+conflicted \
 cowplot \
 CRANsearcher \
 ctv \
@@ -92,6 +93,7 @@ Simpsons \
 simstudy \
 SmartEDA \
 snakecase \
+ssh \
 startup \
 stranger \
 summarytools \
@@ -104,6 +106,7 @@ usethis \
 VIM \
 visdat \
 workflowr \
+WVPlots \
 xray \
 yarrr \
 ztable \
