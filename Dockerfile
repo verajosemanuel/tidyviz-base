@@ -30,6 +30,7 @@ RUN apt-get update -qq && apt-get -y --allow-unauthenticated --no-install-recomm
 RUN install2.r --error --deps TRUE Amelia \
 archivist \
 bookdown \
+caTools \
 charlatan \
 colourpicker \
 compare \
