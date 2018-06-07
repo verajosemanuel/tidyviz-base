@@ -1,5 +1,6 @@
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(devtools,fcuk,tidyverse,pathological)
+devtools::install_github("ewenharrison/finalfit")
 
 # insertion in Rprofile ---------------------------------------------------
 
