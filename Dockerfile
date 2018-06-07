@@ -82,6 +82,7 @@ pool \
 processx \
 profvis \
 psych \
+rlist \
 R.utils \
 rio \
 rlang \
