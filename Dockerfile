@@ -52,6 +52,7 @@ desctable \
 DescTools \
 diffobj \
 drake \
+dqrng \
 errorist \
 ERSA \
 extrafont \
