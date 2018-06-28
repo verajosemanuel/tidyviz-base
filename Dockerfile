@@ -51,6 +51,7 @@ descriptr \
 desctable \
 DescTools \
 diffobj \
+diffdf \
 drake \
 dqrng \
 errorist \
