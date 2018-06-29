@@ -106,6 +106,7 @@ tabplot \
 tadaatoolbox \
 tatoo \
 thinkr \
+unpivotr \
 usethis \
 VIM \
 visdat \
