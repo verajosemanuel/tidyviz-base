@@ -60,6 +60,7 @@ extrafont \
 factoextra \
 filesstrings \
 fitdistrplus \
+flatxml \
 fs \
 funModeling \
 futile.logger \
