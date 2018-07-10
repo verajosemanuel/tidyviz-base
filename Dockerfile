@@ -100,6 +100,7 @@ snakecase \
 ssh \
 startup \
 stranger \
+supernova \
 summarytools \
 tableone \
 tabplot \
