@@ -78,6 +78,7 @@ missForest \
 naniar \
 naturalsort \
 numform \
+packagefinder \
 pathological \
 PMCMRplus \
 pkgdown \
