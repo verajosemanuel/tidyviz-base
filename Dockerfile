@@ -63,6 +63,7 @@ filesstrings \
 fitdistrplus \
 flatxml \
 fs \
+formattable \
 funModeling \
 futile.logger \
 GGally \
