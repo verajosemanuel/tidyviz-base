@@ -34,6 +34,7 @@ caTools \
 charlatan \
 colourpicker \
 compare \
+compareGroups \
 condformat \
 conflicted \
 cowplot \
