@@ -29,6 +29,7 @@ RUN apt-get update -qq && apt-get -y --allow-unauthenticated --no-install-recomm
 
 RUN install2.r --error --deps TRUE Amelia \
 archivist \
+basictabler \
 bookdown \
 caTools \
 charlatan \
@@ -115,6 +116,7 @@ unpivotr \
 usethis \
 VIM \
 visdat \
+viridis \
 workflowr \
 WVPlots \
 xray \
