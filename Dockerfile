@@ -21,6 +21,7 @@ RUN apt-get update -qq && apt-get -y --allow-unauthenticated --no-install-recomm
   r-cran-rgtk2 \
   libmpfr-dev \
   libssh-dev \
+  libzmq3-dev \
   && . /etc/environment \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/ \
