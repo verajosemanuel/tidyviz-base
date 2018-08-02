@@ -114,6 +114,7 @@ tadaatoolbox \
 tatoo \
 thinkr \
 unpivotr \
+UpSetR \
 usethis \
 VIM \
 visdat \
