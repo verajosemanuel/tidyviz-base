@@ -121,7 +121,7 @@ visdat \
 viridis \
 workflowr \
 WVPlots \
-xray \
+# xray \
 yarrr \
 ztable \
 && Rscript /tmp/configure.R \
