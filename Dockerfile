@@ -58,6 +58,7 @@ diffobj \
 diffdf \
 # drake \
 dqrng \
+epubr \
 errorist \
 ERSA \
 extrafont \
