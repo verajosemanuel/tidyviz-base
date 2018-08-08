@@ -34,6 +34,7 @@ basictabler \
 bookdown \
 caTools \
 charlatan \
+cleandata \
 colourpicker \
 compare \
 compareGroups \
