@@ -58,6 +58,7 @@ diffobj \
 diffdf \
 # drake \
 dqrng \
+eikosograms \
 epubr \
 errorist \
 ERSA \
