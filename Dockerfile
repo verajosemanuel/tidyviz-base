@@ -40,6 +40,7 @@ compare \
 compareGroups \
 condformat \
 conflicted \
+corrr \
 cowplot \
 CRANsearcher \
 ctv \
