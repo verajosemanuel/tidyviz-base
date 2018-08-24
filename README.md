@@ -55,6 +55,6 @@ Any file you place there, will be available for the container to use, and vice v
 
 [https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image)
 
-## Included Packages
+## Shiny
 
-
+when running your image shiny should be installed and waiting on port 3838.
