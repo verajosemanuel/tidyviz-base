@@ -1,4 +1,4 @@
-FROM rocker/ropensci:latest
+FROM rocker/rstudio:latest
 
 LABEL maintainer "vera.josemanuel@gmail.com"
 
@@ -27,6 +27,7 @@ RUN apt-get update -qq && apt-get -y --allow-unauthenticated --no-install-recomm
   && rm -rf /var/lib/apt/lists/ \
   && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
 
+RUN export ADD=shiny && bash /etc/cont-init.d/add
 
 RUN install2.r --error --deps TRUE Amelia \
 archivist \
