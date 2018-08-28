@@ -30,6 +30,7 @@ RUN apt-get update -qq && apt-get -y --allow-unauthenticated --no-install-recomm
 RUN export ADD=shiny && bash /etc/cont-init.d/add
 
 RUN install2.r --error --deps TRUE Amelia \
+xml2 \
 archivist \
 basictabler \
 bookdown \
