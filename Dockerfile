@@ -84,6 +84,7 @@ logging \
 MASS \
 mi \
 missForest \
+multicolor \
 naniar \
 naturalsort \
 numform \
