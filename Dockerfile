@@ -127,8 +127,8 @@ usethis \
 VIM \
 visdat \
 viridis \
-workflowr \
-WVPlots \
+# workflowr \
+# WVPlots \
 # xray \
 yarrr \
 ztable \
