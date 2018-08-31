@@ -11,7 +11,6 @@ RUN apt-get update -qq && apt-get -y --allow-unauthenticated --no-install-recomm
   libv8-3.14-dev \
   libgtk2.0-dev \
   libnlopt-dev \
-  libgomp1 \
   libjpeg62-turbo-dev \
   libtool \
   m4 \
@@ -20,10 +19,8 @@ RUN apt-get update -qq && apt-get -y --allow-unauthenticated --no-install-recomm
   ed \
   r-cran-rgtk2 \
   libmpfr-dev \
-  libssh-dev \
   libzmq3-dev \
   libxml2-dev \
-  libssl-dev \
   libapparmor-dev \
   default-jdk \
   && . /etc/environment \
