@@ -39,13 +39,11 @@ RUN apt-get update -qq && apt-get -y --allow-unauthenticated --no-install-recomm
   && . /etc/environment \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/ \
-  && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
-  
-  RUN Rscript /tmp/configure.R \
+  && rm -rf /tmp/downloaded_packages/  /tmp/*.rds \
+  && Rscript /tmp/configure.R \
   && Rscript -e 'extrafont::font_import(prompt = FALSE)' \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/ \
   && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
 
-  
   RUN export ADD=shiny && bash /etc/cont-init.d/add
