@@ -24,6 +24,7 @@ RUN apt-get update -qq && apt-get -y --allow-unauthenticated --no-install-recomm
   libzmq3-dev \
   libxml2-dev \
   libssl-dev \
+  libapparmor-dev \
   default-jdk \
   && . /etc/environment \
   && apt-get clean \
