@@ -23,6 +23,7 @@ RUN apt-get update -qq && apt-get -y --allow-unauthenticated --no-install-recomm
   libssh-dev \
   libzmq3-dev \
   libxml2-dev \
+  libssl-dev \
   default-jdk \
   && . /etc/environment \
   && apt-get clean \
