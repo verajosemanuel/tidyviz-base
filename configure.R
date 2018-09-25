@@ -63,20 +63,6 @@ packages.to.install <- c("Amelia",
 "conflicted",
 "corrr",
 "cowplot",
-"CRANsearcher",
-"ctv",
-"data.table",
-"DataCombine",
-"dataCompareR",
-"DataExplorer",
-"dataMaid",
-"datapasta",
-"dataPreparation",
-"densityClust",
-"descriptr",
-"desctable",
-"DescTools",
-"diffobj",
-"diffdf")
+"CRANsearcher")
 
 check.packages(packages.to.install)
