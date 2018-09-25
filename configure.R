@@ -47,22 +47,3 @@ check.packages <- function(pkg){
         install.packages(new.pkg, dependencies = TRUE)
 }
 
-
-packages.to.install <- c("Amelia",
-"xml2",
-"archivist",
-"basictabler",
-"bookdown",
-"caTools",
-"charlatan",
-"cleandata",
-"colourpicker",
-"compare",
-"compareGroups",
-"condformat",
-"conflicted",
-"corrr",
-"cowplot",
-"CRANsearcher")
-
-check.packages(packages.to.install)
